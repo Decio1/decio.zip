@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta name="generator" content="Hugo 0.117.0">
+
+  <title>
+      
+      decio
+      
+  </title>
+
+</head>
+
+
+  <body>
+
+    
+
+	
+<div class="h-feed">
+
+	
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2024/02/25/les-futurs-de.html">Les futurs de Liu Cixin</a></h1>
+		
+
+		<a href="https://decio.zip/2024/02/25/les-futurs-de.html" class="u-url"><time class="dt-published" datetime="2024-02-25 21:37:02 &#43;0100">Feb 25, 2024</time></a>
+
+		<div class="e-content">
+			 <!-- raw HTML omitted -->
+<p>#lecture #BD</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2020/11/12/ma-config-zsh.html">Ma config zsh </a></h1>
+		
+
+		<a href="https://decio.zip/2020/11/12/ma-config-zsh.html" class="u-url"><time class="dt-published" datetime="2020-11-12 01:00:00 &#43;0100">Nov 12, 2020</time></a>
+
+		<div class="e-content">
+			 <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">C’est décidé! je migre tout mon bazar bash vers zsh<br><br>comme mes terminaux principaux sont sous macOS, pour les modalités je vais me baser sur cet excellent howto <a href="https://t.co/01MgSSpZkh">https://t.co/01MgSSpZkh</a><br><br>pour le pimp -&gt;<a href="https://t.co/gycSLPVyQO">https://t.co/gycSLPVyQO</a><br><br>et pour les accessoires -&gt;<a href="https://t.co/JD6tYsVo1E">https://t.co/JD6tYsVo1E</a></p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/1304796857420468230?ref_src=twsrc%5Etfw">September 12, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>J&rsquo;ai, donc, passé tout mon bazar en zsh 😀 en venant renforcer le front bien nourri des sysadmins, développeurs et <a href="https://www.google.com/search?q=zsh+site%3Amedium.com">blogueurs</a> ayant franchi le pas.</p>
+<p>Il faut dire qu’à ce trend comme à ma décision, a fortement contribué l&rsquo;annonce du passage à zsh comme shell par défaut de <a href="https://support.apple.com/en-us/HT208050">macOS</a> et <a href="https://www.kali.org/blog/kali-linux-2020-4-release/">Kali Linux</a>, les deux systèmes que j&rsquo;utilise le plus.</p>
+<p>Dans le respect de cette tendance, je détaille ici mon fichier de configuration <code>.zshrc</code> ainsi que les options et gadgets introduits au fil des des expériences d&rsquo;utilisation.</p>
+<p>Si vous n&rsquo;avez pas encore franchi le pas et vous voulez changer votre shell par défaut pour zsh, vous pouvez utiliser la commande <code>chsh</code>:</p>
+<p><code>chsh -s /bin/zsh</code></p>
+<p>Quelques annotations techniques en préambule:</p>
+<p>Dans macOS, à la place de l’émulateur proposé par défaut, j&rsquo;utilise l&rsquo;excellent <a href="https://iterm2.com/">iTerm2</a> qui propose des intégrations fort pratiques comme <a href="https://iterm2.com/documentation-shell-integration.html">les notifications, la recherche contextuelle dans lhistorique</a> et <a href="https://iterm2.com/documentation-utilities.html">des utilitaires de gestion de fichiers en cli</a></p>
+<p>Pour la partie &ldquo;pimp&rdquo; j&rsquo;utilise le thème <a href="https://github.com/romkatv/powerlevel10k">powerlevel10k</a></p>
+<p>Pour pouvoir jouir de l&rsquo;agrément graphique apporté par les symboles des services (comme github par ex.) et des systèmes d&rsquo;exploitation dans la barre de statut du shell, il faut installer une police de caractère prenant en charge ces icônes. Dans mon cas j&rsquo;ai choisi <a href="https://github.com/daniruiz/nerd-fonts/tree/fira%2Bkali/patched-fonts/FiraCode">une version patché de la police FireCode</a> appartenant à la collection <a href="https://www.nerdfonts.com/">Nerd Fonts</a>
+Cette version particulière de FireCode a été opportunément patché pour afficher le dragon de Kali 😀👍</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">For those who love customizing the shell I&#39;ve created a custom patched font with the <a href="https://twitter.com/kalilinux?ref_src=twsrc%5Etfw">@kalilinux</a> dragon! 🐉<br><br>FiraCode 👉 <a href="https://t.co/GhHZJ8chiZ">https://t.co/GhHZJ8chiZ</a><br><br>For zsh I recommend trying powerlevel10k and lsd<br><br>Kali logo code: &#39;\uF32B&#39;<br>Hope this will be on master soon in the nerd-fonts repo 😉 <a href="https://t.co/UO8UHtyk9w">pic.twitter.com/UO8UHtyk9w</a></p>&mdash; daniruiz (@dani_ruiz24) <a href="https://twitter.com/dani_ruiz24/status/1334792397738405888?ref_src=twsrc%5Etfw">December 4, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p><img src="https://decio.zip/uploads/2023/5a0135ef8a.jpg" alt=""></p>
+<p>Comme éditeur de texte j&rsquo;utilise vim (<a href="https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/">oui, j’ai appris à en sortir</a> 😂), pour optimiser sa présentation je renseigne son fichier de configuration <code>.vimrc</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>set hlsearch <span style="color:#e6db74">&#34; met en évidence tous les résultats de la recherche
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">set ignorecase &#34;</span> recherche insensible à la casse 
+</span></span><span style="display:flex;"><span>set incsearch <span style="color:#e6db74">&#34; affiche les résultats de la recherche de manière incrémentielle
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">set number &#34;</span> affiche le numéro de ligne
+</span></span><span style="display:flex;"><span>set noswapfile <span style="color:#e6db74">&#34; Désactiver le fichier d&#39;échange (swap)
+</span></span></span></code></pre></div><p>Je complète les fonctionalités de base du système avec les outils &amp; gadgets en ligne de commande suivants:</p>
+<p><a href="https://github.com/cheat/cheat">cheat</a> cheatsheets en cli</p>
+<p><a href="https://github.com/nvbn/thefuck">thefuck</a> magnifique correction de la commande précedente 😀</p>
+<p><a href="https://dystroy.org/broot/">broot</a>
+(pour macOS via Homebrew ➡️ <code>brew install broot</code>) pour naviger dans les dossiers (tree view)</p>
+<p><a href="https://www.speedtest.net/apps/cli">speedtest-cli</a>
+(pour macOS via Homebrew ➡️ <code>brew install speedtest-cli</code>)</p>
+<p><a href="https://github.com/muesli/duf">Disk Usage/Free</a>
+(pour macOS via Homebrew ➡️ <code>brew install duf</code>)</p>
+<p><a href="https://github.com/dvorka/hstr">HSTR -HiSToRy-</a>
+(pour macOS via Homebrew ➡️ <code>brew install hstr</code>)</p>
+<p><a href="https://duck.sh/">duck</a> le CLI de cyberduck
+(pour macOS via Homebrew ➡️ <code>brew install duck</code>)</p>
+<p><a href="https://github.com/variadico/noti">noti</a>
+(pour macOS via Homebrew ➡️ <code>brew install noti</code>)</p>
+<p><a href="https://github.com/sharkdp/fd">fd</a> alternative à <code>find</code>
+(pour macOS via Homebrew ➡️ <code>brew install fd</code> )</p>
+<p><a href="https://github.com/ggreer/the_silver_searcher">The Silver Searcher</a> alternative rapide à <code>find</code> pour chercher dans le code (pour macOS via Homebrew ➡️  <code>brew install the_silver_searcher</code>)</p>
+<p>et encore sous macOS:</p>
+<p><code>brew install wget</code> alternative à curl</p>
+<p><code>brew install fortune</code> pour les citations de la vachette</p>
+<p><code>brew install cowsay</code> la vachette parlante/pensante</p>
+<hr>
+<p>voilà mon fichier de config macOS/linux <code>.zshrc</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span><span style="color:#75715e">#cowsay</span>
+</span></span><span style="display:flex;"><span>cowsay <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>fortune -s<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> | lolcat
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialization code that may require console input (password prompts, [y/n]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># confirmations, etc.) must go above this block; everything else may go below.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -r <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>XDG_CACHE_HOME<span style="color:#66d9ef">:-</span>$HOME/.cache<span style="color:#e6db74">}</span><span style="color:#e6db74">/p10k-instant-prompt-</span><span style="color:#e6db74">${</span>(%)<span style="color:#66d9ef">:-</span>%n<span style="color:#e6db74">}</span><span style="color:#e6db74">.zsh&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  source <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>XDG_CACHE_HOME<span style="color:#66d9ef">:-</span>$HOME/.cache<span style="color:#e6db74">}</span><span style="color:#e6db74">/p10k-instant-prompt-</span><span style="color:#e6db74">${</span>(%)<span style="color:#66d9ef">:-</span>%n<span style="color:#e6db74">}</span><span style="color:#e6db74">.zsh&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>setopt AUTO_CD
+</span></span><span style="display:flex;"><span>setopt BEEP
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#setopt CORRECT</span>
+</span></span><span style="display:flex;"><span>setopt HIST_BEEP
+</span></span><span style="display:flex;"><span>setopt HIST_EXPIRE_DUPS_FIRST
+</span></span><span style="display:flex;"><span>setopt HIST_FIND_NO_DUPS
+</span></span><span style="display:flex;"><span>setopt HIST_IGNORE_ALL_DUPS
+</span></span><span style="display:flex;"><span>setopt HIST_IGNORE_DUPS
+</span></span><span style="display:flex;"><span>setopt HIST_REDUCE_BLANKS
+</span></span><span style="display:flex;"><span>setopt HIST_SAVE_NO_DUPS
+</span></span><span style="display:flex;"><span>setopt HIST_VERIFY
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># https://superuser.com/questions/232457/zsh-output-whole-history</span>
+</span></span><span style="display:flex;"><span>setopt EXTENDED_HISTORY
+</span></span><span style="display:flex;"><span>setopt INC_APPEND_HISTORY
+</span></span><span style="display:flex;"><span>setopt INTERACTIVE_COMMENTS
+</span></span><span style="display:flex;"><span>setopt MAGIC_EQUAL_SUBST
+</span></span><span style="display:flex;"><span>setopt NO_NO_MATCH
+</span></span><span style="display:flex;"><span>setopt NOTIFY
+</span></span><span style="display:flex;"><span>setopt NUMERIC_GLOB_SORT
+</span></span><span style="display:flex;"><span>setopt PROMPT_SUBST
+</span></span><span style="display:flex;"><span>setopt SHARE_HISTORY
+</span></span><span style="display:flex;"><span>setopt histignorespace           <span style="color:#75715e"># skip cmds w/ leading space from history</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>HISTFILE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.cache/zsh_history&#34;</span>
+</span></span><span style="display:flex;"><span>HIST_STAMPS<span style="color:#f92672">=</span>mm/dd/yyyy
+</span></span><span style="display:flex;"><span>HISTSIZE<span style="color:#f92672">=</span><span style="color:#ae81ff">5000</span>
+</span></span><span style="display:flex;"><span>SAVEHIST<span style="color:#f92672">=</span><span style="color:#ae81ff">5000</span>
+</span></span><span style="display:flex;"><span>ZLE_RPROMPT_INDENT<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>WORDCHARS<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>WORDCHARS//<span style="color:#ae81ff">\/</span><span style="color:#e6db74">}</span> <span style="color:#75715e"># Don&#39;t consider certain characters part of the word</span>
+</span></span><span style="display:flex;"><span>export HISTTIMEFORMAT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;[%F %T] &#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># hide EOL sign (&#39;%&#39;)</span>
+</span></span><span style="display:flex;"><span>PROMPT_EOL_MARK<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ZSH completion system</span>
+</span></span><span style="display:flex;"><span>autoload -Uz compinit
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -U history-search-end https://unix.stackexchange.com/questions/97843/how-can-i-search-history-with-text-already-entered-at-the-prompt-in-zsh</span>
+</span></span><span style="display:flex;"><span>autoload -U history-search-end
+</span></span><span style="display:flex;"><span>zle -N history-beginning-search-backward-end history-search-end
+</span></span><span style="display:flex;"><span>zle -N history-beginning-search-forward-end history-search-end
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>compinit -d ~/.cache/zcompdump
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:completion:*:*:*:*:*&#39;</span> menu <span style="color:#66d9ef">select</span>
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:completion:*&#39;</span> matcher-list <span style="color:#e6db74">&#39;m:{a-zA-Z}={A-Za-z}&#39;</span>
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:completion:*&#39;</span> list-colors <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>(s.:.)LS_COLORS<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># configure key keybindings</span>
+</span></span><span style="display:flex;"><span>bindkey -e                                        <span style="color:#75715e"># emacs key bindings</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#39; &#39;</span> magic-space                           <span style="color:#75715e"># do history expansion on space</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#39;^[[3;5~&#39;</span> kill-word                       <span style="color:#75715e"># ctrl + Supr</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#39;^[[3~&#39;</span> delete-char                       <span style="color:#75715e"># delete</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#39;^[[1;5C&#39;</span> forward-word                    <span style="color:#75715e"># ctrl + -&gt;</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#39;^[[1;5D&#39;</span> backward-word                   <span style="color:#75715e"># ctrl + &lt;-</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#39;^[[5~&#39;</span> beginning-of-buffer-or-history    <span style="color:#75715e"># page up</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#39;^[[6~&#39;</span> end-of-buffer-or-history          <span style="color:#75715e"># page down</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#39;^[[H&#39;</span> beginning-of-line                  <span style="color:#75715e"># home</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#39;^[[F&#39;</span> end-of-line                        <span style="color:#75715e"># end</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#39;^[[Z&#39;</span> undo                               <span style="color:#75715e"># shift + tab undo last action</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## bindkey for hstr control-r</span>
+</span></span><span style="display:flex;"><span>bindkey -s <span style="color:#e6db74">&#34;\C-r&#34;</span> <span style="color:#e6db74">&#34;\C-a hstr -- \C-j&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#binfkey for history search https://unix.stackexchange.com/questions/97843/how-can-i-search-history-with-text-already-entered-at-the-prompt-in-zsh</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#34;^[[A&#34;</span> history-beginning-search-backward-end
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#e6db74">&#34;^[[B&#34;</span> history-beginning-search-forward-end
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># force zsh to show the complete history</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># https://www.dontclickthis.run/zsh-expanded-history/</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   alias history=&#34;history 0&#34;</span>
+</span></span><span style="display:flex;"><span>    alias ls<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ls --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span>    alias ls<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;lsd --group-dirs first&#39;</span>
+</span></span><span style="display:flex;"><span>    alias treenav<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;broot&#39;</span>
+</span></span><span style="display:flex;"><span>    alias lstree<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;lsd --tree&#39;</span>	
+</span></span><span style="display:flex;"><span>    alias btop<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;btm -cT&#39;</span>
+</span></span><span style="display:flex;"><span>    alias bat<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;bat --theme=ansi-dark&#39;</span>
+</span></span><span style="display:flex;"><span>    alias cat<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;bat --pager=never&#39;</span>
+</span></span><span style="display:flex;"><span>    alias sc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;source </span>$HOME<span style="color:#e6db74">/.zshrc&#34;</span>
+</span></span><span style="display:flex;"><span>    alias c<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;clear&#39;</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#alias dir=&#39;dir --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#alias vdir=&#39;vdir --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#upgrade Powerlevel10k</span>
+</span></span><span style="display:flex;"><span>    alias p10kup<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;git -C ~/powerlevel10k pull&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    alias grep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;grep --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span>    alias fgrep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;fgrep --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span>    alias egrep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;egrep --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span>    alias diff<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;diff --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#    alias ip=&#39;ip --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span>    alias mylocalip<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ifconfig en0 inet | grep &#39;inet &#39; | awk &#39; { print </span>$2<span style="color:#e6db74"> } &#39;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## INTERNET meteo widgets wttr.in    </span>
+</span></span><span style="display:flex;"><span>    alias meteo<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;curl -H &#34;Accept-Language: fr&#34; wttr.in&#39;</span>
+</span></span><span style="display:flex;"><span>    alias meteo2<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;curl -H &#34;Accept-Language: fr&#34; v2.wttr.in&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## INTERNET current public IP address</span>
+</span></span><span style="display:flex;"><span>    alias myip<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;curl http://ipecho.net/plain; echo&#39;</span>
+</span></span><span style="display:flex;"><span>    alias myip2<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;curl icanhazip.com&#39;</span>
+</span></span><span style="display:flex;"><span>    alias myip3<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dig +short myip.opendns.com @resolver1.opendns.com&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## INTERNET sppedtest (from brew)</span>
+</span></span><span style="display:flex;"><span>    alias speedtest<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;speedtest-cli&#39;</span>
+</span></span><span style="display:flex;"><span>    alias hh<span style="color:#f92672">=</span>hstr
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## better find (via brew)</span>
+</span></span><span style="display:flex;"><span>    alias find<span style="color:#f92672">=</span>fd
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## better grep (via brew)</span>
+</span></span><span style="display:flex;"><span>    alias sgrep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ag&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## get rid of command not found ##</span>
+</span></span><span style="display:flex;"><span>   alias cd..<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cd ..&#39;</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## a quick way to get out of current directory ##</span>
+</span></span><span style="display:flex;"><span>   alias ..<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cd ..&#39;</span>
+</span></span><span style="display:flex;"><span>   alias ...<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cd ../../../&#39;</span>
+</span></span><span style="display:flex;"><span>   alias ....<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cd ../../../../&#39;</span>
+</span></span><span style="display:flex;"><span>   alias .....<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cd ../../../../&#39;</span>
+</span></span><span style="display:flex;"><span>   alias .4<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cd ../../../../&#39;</span>
+</span></span><span style="display:flex;"><span>   alias .5<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cd ../../../../..&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># macOS aliasses</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> $OSTYPE <span style="color:#f92672">==</span> darwin* <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    alias flush<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dscacheutil -flushcache&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Apps</span>
+</span></span><span style="display:flex;"><span>    alias browse<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;open -a /Applications/Brave\ Browser.app/&#34;</span>
+</span></span><span style="display:flex;"><span>    alias preview<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;open -a &#34;Preview&#34;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># suffix aliases on the mac</span>
+</span></span><span style="display:flex;"><span>    alias -s flac<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s mp3<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s ogg<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s wav<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s avi<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s mpeg<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s mpg<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s wmv<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s bmp<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s png<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s jpg<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s jpeg<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s gif<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s pdf<span style="color:#f92672">=</span>open
+</span></span><span style="display:flex;"><span>    alias -s org<span style="color:#f92672">=</span>$BROWSER
+</span></span><span style="display:flex;"><span>    alias -s com<span style="color:#f92672">=</span>$BROWSER
+</span></span><span style="display:flex;"><span>    alias -s net<span style="color:#f92672">=</span>$BROWSER
+</span></span><span style="display:flex;"><span>    alias -s html<span style="color:#f92672">=</span>$BROWSER
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># network</span>
+</span></span><span style="display:flex;"><span>    alias mylocalip<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ifconfig en0 inet | grep &#39;inet &#39; | awk &#39; { print </span>$2<span style="color:#e6db74"> } &#39;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># cyberduck via brew</span>
+</span></span><span style="display:flex;"><span>    alias ftp<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;duck&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># integration iTerm2 </span>
+</span></span><span style="display:flex;"><span>    test -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/.iterm2_shell_integration.zsh&#34;</span> <span style="color:#f92672">&amp;&amp;</span> source <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/.iterm2_shell_integration.zsh&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    export LESS_TERMCAP_mb<span style="color:#f92672">=</span><span style="color:#e6db74">$&#39;\E[1;31m&#39;</span>     <span style="color:#75715e"># begin blink</span>
+</span></span><span style="display:flex;"><span>    export LESS_TERMCAP_md<span style="color:#f92672">=</span><span style="color:#e6db74">$&#39;\E[1;36m&#39;</span>     <span style="color:#75715e"># begin bold</span>
+</span></span><span style="display:flex;"><span>    export LESS_TERMCAP_me<span style="color:#f92672">=</span><span style="color:#e6db74">$&#39;\E[0m&#39;</span>        <span style="color:#75715e"># reset bold/blink</span>
+</span></span><span style="display:flex;"><span>    export LESS_TERMCAP_so<span style="color:#f92672">=</span><span style="color:#e6db74">$&#39;\E[01;33m&#39;</span>    <span style="color:#75715e"># begin reverse video</span>
+</span></span><span style="display:flex;"><span>    export LESS_TERMCAP_se<span style="color:#f92672">=</span><span style="color:#e6db74">$&#39;\E[0m&#39;</span>        <span style="color:#75715e"># reset reverse video</span>
+</span></span><span style="display:flex;"><span>    export LESS_TERMCAP_us<span style="color:#f92672">=</span><span style="color:#e6db74">$&#39;\E[1;32m&#39;</span>     <span style="color:#75715e"># begin underline</span>
+</span></span><span style="display:flex;"><span>    export LESS_TERMCAP_ue<span style="color:#f92672">=</span><span style="color:#e6db74">$&#39;\E[0m&#39;</span>        <span style="color:#75715e"># reset underline</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Take advantage of $LS_COLORS for completion as well</span>
+</span></span><span style="display:flex;"><span>    zstyle <span style="color:#e6db74">&#39;:completion:*&#39;</span> list-colors <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>(s.:.)LS_COLORS<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># some more ls aliases</span>
+</span></span><span style="display:flex;"><span>    alias ll<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ls -l&#39;</span>
+</span></span><span style="display:flex;"><span>    alias la<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ls -A&#39;</span>
+</span></span><span style="display:flex;"><span>    alias l<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ls -CF&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export VISUAL<span style="color:#f92672">=</span>vim
+</span></span><span style="display:flex;"><span>export EDITOR<span style="color:#f92672">=</span>$VISUAL
+</span></span><span style="display:flex;"><span>export HSTR_CONFIG<span style="color:#f92672">=</span>hicolor
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>eval <span style="color:#66d9ef">$(</span>thefuck --alias<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>source ~/powerlevel10k/powerlevel10k.zsh-theme
+</span></span><span style="display:flex;"><span>source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+</span></span><span style="display:flex;"><span>source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[[</span> ! -f ~/.p10k.zsh <span style="color:#f92672">]]</span> <span style="color:#f92672">||</span> source ~/.p10k.zsh
+</span></span><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/usr/local/sbin:</span>$PATH<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>Le résultat visuel dans MacOS:</p>
+<p><img src="https://decio.zip/uploads/2023/a7886369f0.jpg" alt=""></p>
+<p>Le résultat visuel dans Kali Linux</p>
+<p><img src="https://decio.zip/uploads/2023/1e59ffd844.jpg" alt=""></p>
+<p>Mis à part le côté satisfaisant pour l’œil du tuning graphique, à l&rsquo;usage, je suis trés content du résultat notamment par les prestations et les avantages apportés par ce shell comme l&rsquo;historique partagé entre les différentes consoles et l&rsquo;autocomplétion des commandes, par ex.</p>
+<p>Un seul petit problème à l’actif, rencontré sous macOS qui se manifestait par un lag de quelques seconds lors du premier lancement du terminal pour arriver à l’invite de commande du shell, probablement causé par la routine de mise à jour du thème qui s’effectue à chaque démarrage.</p>
+<p>J’ai pu résoudre en mesurant les performances au boot
+et en installant une version de git indépendant du -trés lourd- xcode.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2020/09/27/death-stranding.html">Death Stranding</a></h1>
+		
+
+		<a href="https://decio.zip/2020/09/27/death-stranding.html" class="u-url"><time class="dt-published" datetime="2020-09-27 16:48:19 &#43;0100">Sep 27, 2020</time></a>
+
+		<div class="e-content">
+			 <p>Presque une année pour « platinér » ce chef-d’œuvre qui redéfinit, à mon avis, le <em>storytelling</em> dans le monde des jeux vidéos</p>
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Avec quelques heures au compteur: je suis un livreur conquis<br>Très belle histoire SF aux ambiances dark&amp;mélancoliques.<br>Le système d&#39;entre-aide en ligne désynchronisé est un coup de génie<br>++ les graphismes, la bande-son qui soulignent royalement cette sensation d&quot;Ensemble, seul&quot;👍</p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/1195747400884686848?ref_src=twsrc%5Etfw">November 16, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">...et ainsi s&#39;achève ma carrière comme porteur. Magnifique jeu et expérience <a href="https://twitter.com/hashtag/DeathStranding?src=hash&amp;ref_src=twsrc%5Etfw">#DeathStranding</a> <a href="https://twitter.com/hashtag/PS4share?src=hash&amp;ref_src=twsrc%5Etfw">#PS4share</a> <a href="https://t.co/qYC0KvWYNS">pic.twitter.com/qYC0KvWYNS</a></p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/1310279987040333831?ref_src=twsrc%5Etfw">September 27, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Ce fut un parcours passionnant, parfois introspectif, surtout dans cette période pandémique qui adhère parfaitement à l&rsquo;histoire que <a href="https://fr.wikipedia.org/wiki/Hideo_Kojima">小島 秀夫</a> nous raconte et que soudain prends presque les couleurs d&rsquo;une prophétie&hellip;</p>
+<p>Je ne me suis jamais ennuyé en 166 heures de jeu effectif, malgré le caractère intrinsèquement répétitif des livraisons (typiquemment pour obtenir les trophées), car les décors sont somptueux et enrichis d’une solitude vivante et connectée;</p>
+<p>À propos de connexion: un coup de génie l’interaction différée qui apporte une nouvelle approche à la collaboration dans le divertissement en ligne &amp; multijoueur.</p>
+<p>Le tout mis en valeur par une <a href="https://open.spotify.com/playlist/37i9dQZF1DX5kLV4IR8j6G?si=GaTxFxr-RQmxhTNBWta-FA">bande-son</a> exceptionnelle qui se manifeste en parfaite  symbiose aux situations et événements de la vie d’un porteur.</p>
+<p>J’ai recueilli <a href="https://www.flickr.com/photos/desmodex/albums/72157716195241528">ici</a> quelque image prise au fil de cette belle expérience Hideo-ludique.  (⚠️ attention spoilers inside)</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2020/08/16/xcsset-un-malware.html">XCSSET: un malware pour macOS qui se sert de Xcode</a></h1>
+		
+
+		<a href="https://decio.zip/2020/08/16/xcsset-un-malware.html" class="u-url"><time class="dt-published" datetime="2020-08-16 08:15:28 &#43;0100">Aug 16, 2020</time></a>
+
+		<div class="e-content">
+			 <p>Un autre palier qualitatif dans la conception des malwares pour macOS a été franchi avec la découverte par l&rsquo;équipe de chercheurs de Trend Micro de ce spécimen nommé <a href="https://blog.trendmicro.com/trendlabs-security-intelligence/xcsset-mac-malware-infects-xcode-projects-performs-uxss-attack-on-safari-other-browsers-leverages-zero-day-exploits/">XCSSET</a></p>
+<p><a href="https://documents.trendmicro.com/assets/pdf/XCSSET_Technical_Brief.pdf">Informations techniques XCSSET par Trend Micro</a> - <em><a href="/joints/pdf/XCSSET_Technical_Brief.pdf">Copie locale Informations techniques XCSSET</a></em></p>
+<p>Même si l&rsquo;exploitation de l&rsquo;environnement de développement Xcode n&rsquo;est pas nouvelle dans la pratique (par ex. l&rsquo;attaque <a href="https://fr.wikipedia.org/wiki/XcodeGhost">XcodeGhost</a> de 2015) ou dans la &ldquo;philosophie&rdquo; d&rsquo;attaque</p>
+<p><img src="https://decio.zip/uploads/2023/c2ddf51d7c.jpg" alt=""></p>
+<p><em>Document tiré des révélations d&rsquo;Edward Snowden &ldquo;Strawhorse: Attacking the MacOS and iOS Software Development Kit&rdquo;</em></p>
+<p>ni l&rsquo;étendue apparente de cette attaque, qui se limiterait pour l&rsquo;instant à deux dépôts github, ne semble important;</p>
+<blockquote>
+<p>ragulSimpragma/twitterTask</p>
+</blockquote>
+<blockquote>
+<p>yimao009/MVC-MVP-MVVM</p>
+</blockquote>
+<p><em>les deux repositories infectée selon la recherche</em></p>
+<p>l&rsquo;utilisation ce vecteur d&rsquo;attaque avec l&rsquo;investissement de deux 0-day au passage, mettent en evidence une interet accru de ces acteurs pour une &ldquo;entrée dérobée&rdquo; dans l&rsquo;écosystème verrouillé Apple ainsi que les moyens conséquents auxquels ils ont désormais accès.</p>
+<p>Ici le descriptif des deux Zero-day</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Exploit 0x2: <br>(ab)use SafariForWebKitDevelopment &quot;to perform malicious operations w/o user approval&quot; 🙅‍♂️ <a href="https://t.co/MKf4fWuNSM">pic.twitter.com/MKf4fWuNSM</a></p>&mdash; Patrick Wardle (@patrickwardle) <a href="https://twitter.com/patrickwardle/status/1294168036975366145?ref_src=twsrc%5Etfw">August 14, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Au sujet de la première faille relative au contournement du sandbox, permettant l&rsquo;accès aux cookies de Safari via sshd: cette anomalie facilement reproductible avait été remarquée et détaillée en 2018:</p>
+<p><a href="https://eclecticlight.co/2020/08/20/the-vulnerability-in-remote-login-ssh-persists">The vulnerability in Remote Login (ssh) persists</a></p>
+<p><a href="https://www.sentinelone.com/blog/mojaves-security-hardening-user-protections-bypassed">Mojave’s security “hardening” | User protections could be bypassed</a></p>
+<p>du point de vue technique, intéressant aussi la mixité d&rsquo;approche dans les différents modules du payload avec l&rsquo;utilisation notamment du language AppleScript natif macOS pour interagir avec le système et créer les autres composants nécessaires à l&rsquo;infection et au contrôle à distance.</p>
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">...toujours à propos de l&#39;utilisation malveillante d&#39;Applescript : exemplaire le payload trouvé par <a href="https://twitter.com/TrendMicroRSRCH?ref_src=twsrc%5Etfw">@TrendMicroRSRCH</a>  dans ce malware macOS ...tout chaud! 😮<a href="https://t.co/ivawWmD814">https://t.co/ivawWmD814</a><br><br>🤯 Détection, recueille d&#39;info et autogénération, le tout géré en AppleScript! c&#39;est beau. <a href="https://t.co/zE3NMccXRV">pic.twitter.com/zE3NMccXRV</a></p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/1294291391183560704?ref_src=twsrc%5Etfw">August 14, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<hr>
+<p><em>update 20/08 ajout liens décrivant le contournement via sshd</em></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2020/02/15/rockpi.html">RockPi 4</a></h1>
+		
+
+		<a href="https://decio.zip/2020/02/15/rockpi.html" class="u-url"><time class="dt-published" datetime="2020-02-15 18:05:20 &#43;0100">Feb 15, 2020</time></a>
+
+		<div class="e-content">
+			 <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">J’en ai donc profité pour tester une autre belle chinoiserie <br><br>ça<br><br>un adaptateur pour les disques NVMe SSD format propriétaire Apple vers M.2 <a href="https://t.co/uPZ9FG4THk">pic.twitter.com/uPZ9FG4THk</a></p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/1228740145110798343?ref_src=twsrc%5Etfw">February 15, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">...et évidement mieux que ce même disque dans un boîtier USB 3.0 OWC Envoy Pro (ExFAT et HFS+) <a href="https://t.co/Jx0LMnrgXB">pic.twitter.com/Jx0LMnrgXB</a></p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/1228743585543184384?ref_src=twsrc%5Etfw">February 15, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2020/01/19/mes-modems-et.html">Mes modems et les failles (Cablehaunt et Puma6Fail)</a></h1>
+		
+
+		<a href="https://decio.zip/2020/01/19/mes-modems-et.html" class="u-url"><time class="dt-published" datetime="2020-01-19 19:12:44 &#43;0100">Jan 19, 2020</time></a>
+
+		<div class="e-content">
+			 <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Aujourd&#39;hui j&#39;ai appris que mon modem cable TC7200 est muni d&#39;un analyseur de spectre sur le port 8080 par la puce Broadcom<br>Cool! <br>...mise à part le fait qui &#39;il est ainsi vulnérable à la faille nommée <a href="https://twitter.com/hashtag/cablehaunt?src=hash&amp;ref_src=twsrc%5Etfw">#cablehaunt</a> <a href="https://t.co/ul7Vud7YHe">https://t.co/ul7Vud7YHe</a> découverte et publiée par <a href="https://twitter.com/lyrebirds_dk?ref_src=twsrc%5Etfw">@lyrebirds_dk</a> ! <a href="https://t.co/bi7xh6LZgj">pic.twitter.com/bi7xh6LZgj</a></p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/1216036336282624006?ref_src=twsrc%5Etfw">January 11, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Pas trivial à exploiter depuis l&#39;extérieur du LAN domestique, mais inquiétant quand même <a href="https://t.co/qYpcXPsbs1">pic.twitter.com/qYpcXPsbs1</a></p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/1216037631974420483?ref_src=twsrc%5Etfw">January 11, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Bon bah, fournisseur d&#39;accès prévenu, nouvelles règles firewall implémentées...<br><br>Croisons les doigts pour un patch ...ou remplacement.</p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/1216044876036550661?ref_src=twsrc%5Etfw">January 11, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">non, mais LOL 😲🥴😹<br><br>malgré la version récente du firmware, mon nouveau modem de remplacement est -encore- vulnérable à l’attaque par déni de service CVE-2017-5693 / INTEL-SA-00097 <a href="https://t.co/nY9y4rsmQg">https://t.co/nY9y4rsmQg</a> <a href="https://t.co/cX8F7m5sdV">pic.twitter.com/cX8F7m5sdV</a></p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/1218994798004264960?ref_src=twsrc%5Etfw">January 19, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2017/10/12/gli-elaboratori-elettronici.html">1977 Gli elaboratori elettronici nel mondo della produzione</a></h1>
+		
+
+		<a href="https://decio.zip/2017/10/12/gli-elaboratori-elettronici.html" class="u-url"><time class="dt-published" datetime="2017-10-12 09:31:45 &#43;0100">Oct 12, 2017</time></a>
+
+		<div class="e-content">
+			 <p>Durante una spedizione esplorativa nella biblioteca di famiglia mi sono imbattuto in una vera pepita.</p>
+<blockquote class="twitter-tweet"><p lang="it" dir="ltr">Lungimiranza scientifica<br>da <a href="https://twitter.com/hashtag/Scienza?src=hash&amp;ref_src=twsrc%5Etfw">#Scienza</a>&amp; <a href="https://twitter.com/hashtag/Tecnica?src=hash&amp;ref_src=twsrc%5Etfw">#Tecnica</a> 1977(!!)<br>Gli elaboratori elettronici nel mondo della produzione-Mario G. Losano<br>Vulnerabilità <a href="https://t.co/tVgE3PrAHz">pic.twitter.com/tVgE3PrAHz</a></p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/918490804213239808?ref_src=twsrc%5Etfw">October 12, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Percorrendo i bei volumi rilegati degli annuari della mitica Enciclopedia della Scienza e della Tecnica Mondadori, un articolo del&rsquo;annata 1977 ha catturato il mio occhio informatico:</p>
+<p>&ldquo;<a href="/joints/pdf/elaboratori77.pdf">Gli elaboratori elettronici nel mondo della produzione</a>&rdquo; del Professor emerito <a href="http://www.mariolosano.it/">Mario G. Losano</a></p>
+<p>Il riquadro di presentazione mi ha colpito subito: nonostante la pagina ingiallita dal tempo sottolineasse egregiamente il senso del passar dei decenni, il testo sembrava scritto oggi:</p>
+<p><em>Il potere di chi detiene un sistema informatico;</em></p>
+<p><em>funzionalità dei grandi archivi, ma tutela della privacy;</em></p>
+<p><em>miglioramento della produzione, ma salvaguardia dei valori umani;</em></p>
+<p><em>i contrastanti problemi che i sistemi di elaborazione di dimensioni sempre piu piccole ma di potenza sempre piu grande di cui fruisce l&rsquo;informatica inpongono alla società moderna</em></p>
+<p>l&rsquo;incipt mi ha rassicurato sull&rsquo;anno effettivo di pubblicazione evocando sistemi isolati dell&rsquo;era pre-Internet (gustosi sotto questo aspetto gli scenari immaginati nell&rsquo;evoluzione dei sistemi complessi e i pre-processors) pur mantenendo il valore profetico espresso in osservazioni come:</p>
+<p><em>&hellip;è ipotizzabile che, in un futuro forse non lontano, le singole isole automatizzate vengano collegate fra loro, in modo da formare complessi sistemi integrati. Fin da ora è quindi necessario porsi il problema dei danni che possono derivare all&rsquo;individuo o alla società dall&rsquo;erroneo funzionamento o dalla distruzione parziale o totale dei centri di calcolo.</em></p>
+<p>Seguito da un formidabile excursus sulla questione riservatezza, talmente attuale senza ricorrere a riferimenti romanzeschi, da sembrare veggenza</p>
+<p><em>In Conclusione, l&rsquo;uso dell&rsquo;elaboratore come strumento per il controllo totale degli individui è un pericolo effettivamente esistente in un futuro non immediato&hellip;</em></p>
+<p>vi si trattano già i fondamentali della sicurezza Informatica:</p>
+<ul>
+<li>
+<p>C.I.A.</p>
+</li>
+<li>
+<p>Vulnerabilità dei sistemi complessi</p>
+</li>
+<li>
+<p>Risk management approach</p>
+</li>
+</ul>
+<p>vi si evoca il crimine informatico:</p>
+<p><em>Oggi la quota di computer crimes è ancora quasi irrlevante, tuttavia sarebbe opportuno che ogni polizia - seguendo l&rsquo;esempio di Scotland Yard - disponesse di pochi specialisti aggiornati in questo campo, i quali siano in grado di consigliare le forme di prevenzione e di intervento piu opportune non appena se ne presenti la necessità.</em></p>
+<p>Rendo qui un piccolissimo omaggio riempito d&rsquo;immenso rispetto per il genio analitico e divulgativo del professor Losano e tramite lui un omaggio ai pionieri della scienza della sicurezza informatica.</p>
+<p>Risorse:</p>
+<p><a href="/joints/pdf/indice.pdf">Indice annuario 1977</a></p>
+<p><a href="http://www.mariolosano.it/Materiale/LosanoSaggi.htm">http://www.mariolosano.it/Materiale/LosanoSaggi.htm</a></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2017/01/02/installation-de-kali.html">Installation de Kali Linux 2016.2 (rolling edition release) sur un MacBook Pro 5,1</a></h1>
+		
+
+		<a href="https://decio.zip/2017/01/02/installation-de-kali.html" class="u-url"><time class="dt-published" datetime="2017-01-02 21:02:53 &#43;0100">Jan 2, 2017</time></a>
+
+		<div class="e-content">
+			 <hr>
+<p>La saga continue!</p>
+<p>Je vous avais décrit <a href="/2015/04/01/installer-kali-linux.html">ici</a> les opérations qui m’ont permis d’installer les différentes versions de la distribution Linux Kali sur un MacBook 15 « Late 2008 »</p>
+<p>Or le moment est arrivé de suivre l’évolution de ce système d’exploitation qui debout 2016 est passé sur un modèle de publication en continu (rolling release) et est arrivé récemment à sa deuxième <a href="https://www.kali.org/news/kali-linux-20162-release/">version nommée 2.2016</a>.</p>
+<p>Ce système <a href="https://fr.wikipedia.org/wiki/Rolling_release">dynamique</a> permet dans l’ensemble de profiter plus rapidement des dernières versions logicielles et spécifiquement, dans le cas de cette distribution, de jouir des mises à jour pertinentes et soignées publiées par l’équipe <a href="https://www.offensive-security.com/">offensive security</a>.</p>
+<p>Après sauvegarde des données (contenues dans /home/) sur clé USB, j’ai, donc, décidé de partir sur une « clean install »</p>
+<p>Premier constat:</p>
+<p>Si <a href="http://www.rodsbooks.com/refind/">rEFInd</a> reconnais bien la clé d’installation générée à partir de l’image iso de Kali, le nouveau système d’installation à la sauce Debian provoque un joli kernel panic au chargement. (Cela se produit avec l&rsquo;iso <strong>2016.2</strong> standard comme avec l&rsquo;image plus récente compilée <a href="http://cdimage.kali.org/kali-images/kali-weekly/">hebdomadairement</a>.</p>
+<p>Raison pour laquelle j’ai opté pour la création d’une clé avec l’excellent logiciel <a href="https://www.sevenbits.io/mlul/">Mac Linux USB loader</a></p>
+<p>La clé ainsi générée, avec un EFI adapté au Mac, permet le démarrage sur Kali en mode « live » directement depuis le « gestionnaire de démarrage »: cool, de bon augure, tout fonctionne!</p>
+<p>En partant de là: comment installer le système sur le disque dur du Mac maintenant que Kali ne propose plus l’application d’installation dédiée?</p>
+<p>Heureusement le système de démarrage généré sur la clé par le logiciel « Mac Linux USB loader » prévoit un fichier de configuration appelé « entreprise.cfg » situé dans le dossier /efi/boot qui se présente à l’édition ainsi:</p>
+<pre tabindex="0"><code>#This file is machine generated. Do not modify it unless you know what you are doing.
+
+autoboot 0
+entry Kali
+family Debian
+kernel /live/vmlinuz findiso=/efi/boot/boot.iso boot=live noconfig=sudo username=root hostname=kali
+
+entry Kali (installer)
+family Debian
+initrd /install/gtk/initrd.gz
+kernel /install/gtk/vmlinuz findiso=/efi/boot/boot.iso boot=live noconfig=sudo username=root hostname=kali
+</code></pre><p>Dans ce fichier, deux détails laissent présager l’heureuse possibilité de démarrer sur la procédure d&rsquo;installation:</p>
+<ol>
+<li>la présence d&rsquo;un flag autoboot qui permet de choisir l&rsquo;option de démarrage préférée</li>
+<li>la correcte détection dans la deuxième « entry » de l&rsquo;installeur</li>
+</ol>
+<p>j&rsquo;ai, donc, procédé à l’édition de ce fichier, en modifiant le flag autoboot de 0 à 1 pour indiquer au système de démarrer sur la procédure d&rsquo;installation.</p>
+<p>Bingo!</p>
+<p>la clé est encore reconnue directement par le gestionnaire de démarrage (touche alt au démarrage du mac)</p>
+<p><img src="https://decio.zip/uploads/2023/a7545944ce.jpg" alt=""></p>
+<p>et il démarre directement sur le menu d&rsquo;installation</p>
+<p><img src="https://decio.zip/uploads/2023/e388cd623d.jpg" alt=""></p>
+<p>&hellip;sauf que la procédure d&rsquo;installation se bloque lors du montage de l&rsquo;iso contenant les paquets d&rsquo;installation de base</p>
+<p><img src="https://decio.zip/uploads/2023/8007045d41.jpg" alt=""></p>
+<p>Toute tentative de monter l&rsquo;iso via busybox par une des consoles est restée vaine: le système refuse de reconnaître le support</p>
+<p>Ce problème est même relaté dans le <a href="https://github.com/SevenBits/Mac-Linux-USB-Loader/issues/134#issuecomment-262150968">github du développeur</a></p>
+<p>Je me suis donc résigné à graver un bon vieux dvd old-school.</p>
+<p>Étant le « late 2008 » un des derniers modèles à posséder un « superdrive », une fois démarré par clé et bloqué sur la phase de montage du CD-ROM, j&rsquo;ai pu insérer le DVD.</p>
+<p>et à la deuxième détection&hellip; BOOM! DVD reconnu! l&rsquo;installeur a pu compléter la copie des fichiers de base et terminer ainsi l&rsquo;installation correctement.</p>
+<p>Deux bonnes surprises au premier démarrage: le système présente la fenêtre de login très rapidement et &hellip;alléluia! la carte graphique est reconnue d&rsquo;office: plus besoin d&rsquo;installer les pilotes propriétaires Nvidia.</p>
+<p><img src="https://decio.zip/uploads/2023/32d4f8d510.jpg" alt=""></p>
+<p>Seul petit bémol: pas de son.</p>
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">par contre pas de son...<br>comme d&#39;hab: <br>systemctl --user enable pulseaudio &amp;&amp; systemctl --user start pulseaudio<br>reboot et ...ça marche</p>&mdash; @Decio_O_O&#39;̴̘͍͈̼̺̪̣̻̹̔̾̆ͅͅ🌻 now on Mastodon🦣 ⬇️ (@Decio_o_o) <a href="https://twitter.com/Decio_o_o/status/814503148106694657?ref_src=twsrc%5Etfw">December 29, 2016</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Il suffit d&rsquo;activer pulseaudio par la ligne de commande suivante:</p>
+<p><code>systemctl --user enable pulseaudio &amp;&amp; systemctl --user start pulseaudio</code></p>
+<p>suivi par un redémarrage.</p>
+<p>Tout fonctionne: l&rsquo;ergonomie, la facilité d’accès et le choix de logiciels spécifiques de cette dernière version sont vraiment remarquables.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2016/05/02/the-classic-xkcds.html">The classic xkcd&#39;s sudo revisited (OSX &#39;El Capitan&#39; update)</a></h1>
+		
+
+		<a href="https://decio.zip/2016/05/02/the-classic-xkcds.html" class="u-url"><time class="dt-published" datetime="2016-05-02 05:57:17 &#43;0100">May 2, 2016</time></a>
+
+		<div class="e-content">
+			 <p><img src="https://decio.zip/uploads/2023/cdb42d209c.jpg" alt=""></p>
+<p><em>System Integrity Protection is a security feature of Apple&rsquo;s macOS operating system introduced in OS X El Capitan</em></p>
+<p>added text made with <a href="https://github.com/ipython/xkcd-font">xkcd-font</a></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2016/01/25/big-iot-conceptual.html">( ͠° ͟ʖ ͡°) Big iot Ꙭ conceptual mosaic</a></h1>
+		
+
+		<a href="https://decio.zip/2016/01/25/big-iot-conceptual.html" class="u-url"><time class="dt-published" datetime="2016-01-25 11:05:26 &#43;0100">Jan 25, 2016</time></a>
+
+		<div class="e-content">
+			 <p>Fun with <a href="https://twitter.com/shodanhq">shodanhq</a> dump image <a href="https://asciinema.org/a/33958">script</a></p>
+<p><img src="https://decio.zip/uploads/2023/fef4684333.jpg" alt=""></p>
+<p><a href="https://decio.zip/uploads/2023/mosaico.jpg">click to open in full size</a></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2015/04/01/installer-kali-linux.html">Installer Kali Linux sur un Macbook Pro 5,1 (15-inch, Late 2008)</a></h1>
+		
+
+		<a href="https://decio.zip/2015/04/01/installer-kali-linux.html" class="u-url"><time class="dt-published" datetime="2015-04-01 19:17:58 &#43;0100">Apr 1, 2015</time></a>
+
+		<div class="e-content">
+			 <p>categories:</p>
+<ul>
+<li>archive
+tags:</li>
+<li>kali</li>
+<li>linux</li>
+<li>Mac</li>
+<li>macbook</li>
+<li>howto</li>
+</ul>
+<hr>
+<p><img src="https://decio.zip/uploads/2023/17cace22d0.jpg" alt=""></p>
+<p>Dans cet article je vais décrire les passages qui m’ont permis d’installer Kali Linux amd64 en natif sur un Mac Book Pro doté d’une CPU intel Core 2 Duo 2.40GHz (P8600 « Penryn ») 4 GB de RAM, 500GB de disque dur et NVIDIA GeForce 9600M GT &amp; GeForce 9400M comme cartes graphiques</p>
+<p><img src="https://decio.zip/uploads/2023/8174f7455a.jpg" alt=""></p>
+<p>Cette machine dont les caractéristiques sont désormais juste suffisantes pour faire tourner (péniblement) la dernière mouture de OSX est en revanche plus que suffisante pour faire tourner confortablement un Linux.</p>
+<p><img src="https://decio.zip/uploads/2023/d1eaddcea1.jpg" alt=""></p>
+<p>J’ai choisi Kali Linux pour sa spécialisation orientée pentest, administration systèmes et réseau, néanmoins, étant cette distribution Linux basée sur Debian, cette procédure devrait aussi permettre installation d’autres versions dérivées comme <a href="https://ubuntu.com/download/desktop">Ubuntu</a> ou la magnifique <a href="http://elementaryos.org">ElementaryOS</a></p>
+<p><strong>Les défis:</strong></p>
+<p>Dans la pratique deux obstacles s’interposent à cette réalisation</p>
+<ol>
+<li>
+<p>Le premier lié au caractère spécifique du micrologiciel <a href="http://fr.wikipedia.org/wiki/Architecture_Apple-Intel">EFI</a> qui équipe tous les produits de la pomme. En effet ce système ne reconnait pas les « démarreurs » et les partitions Linux.</p>
+</li>
+<li>
+<p>L’autre obstacle dépend du matériel et notamment la carte graphique qui est prise en charge de manière incorrecte par l’assistant d’installation par défaut.</p>
+</li>
+</ol>
+<p>En effet, si désormais pratiquement toutes les composantes sont reconnues et prises en charge correctement par Debian (y compris les touches fonctions), les cartes graphiques restent notoirement problématiques.</p>
+<p><strong>Solutions utilisées:</strong></p>
+<p>Afin de contourner les deux obstacles précédemment illustrés, j’ai utilisé les solutions suivantes:</p>
+<ul>
+<li>Un disque dur externe installé avec OSX 10.9 et  sur le quelle j’ai déployé la solution <a href="http://www.rodsbooks.com/refind/getting.html">rEFInd</a></li>
+</ul>
+<p>Ce gestionnaire de démarrage, qui s’installe au tout début du disque dur, étant reconnu par l’EFI Apple permet de bypasser la problématique du firmware EFI précédemment évoquée.</p>
+<p><img src="https://decio.zip/uploads/2023/5cf565c5ff.jpg" alt=""> En effet, ce dernier est reconnu par le <a href="http://support.apple.com/fr-fr/HT1310">gestionnaire de démarrage</a> des Macs comme une partition bootable portant le nom « EFI Boot » donnant ainsi accès au système de choix du disque de démarrage rEFInd qui, lui, est capable de reconnaitre des disques/USB d’installation Linux (et dérivés)</p>
+<p><img src="https://decio.zip/uploads/2023/f3f86091fe.jpg" alt=""></p>
+<p>Les deux premières icônes avec le « badge disque dur » indiquent les systèmes installés en local sur le disque dur de la machine. (Kali dans mon cas + partition boot en FAT)</p>
+<p>Les quatre portant le « badge USB » montrent les systèmes connectés par câble (deux OSX + 1 image « Bootable utilitieas » sur mon disque dur externe et le disque d’installation Kali Linux fourni par mon smartphone)</p>
+<p>Autre solution utilisée dans cette première phase de démarrage/installation consiste dans mon smartphone Andorid équipé du formidable logiciel <a href="https://play.google.com/store/apps/details?id=com.softwarebakery.drivedroid&amp;hl=fr">DriveDroid</a> qui permet de fournir, comme ferait une clé USB préparée ad hoc, des images iso de démarrage pour l’installation.</p>
+<p><img src="https://decio.zip/uploads/2023/bfc122b82e.jpg" alt=""> Dans mon cas j’ai utilisé les images de systèmes suivants:</p>
+<p>&ldquo;Kali-linux-1.0.6-amd64-iso&rdquo; Pour installer Kali Linux</p>
+<p><em>(UPDATE 03/2015 version actuelle testée [kali-linux-1.1.0a-amd64.iso)</em></p>
+<p><a href="http://gparted.org/livecd.php">gparted Live</a> Pour le partitionnement initial du disque dur de la machine</p>
+<p><a href="http://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable/">Supergrub</a> Ce petit live cd permets de choisir et éditer le fichier de boot Linux (correction de la configuration par défaut installé par Kali)</p>
+<ul>
+<li>Pour ce qui concerne le pilote graphique: le problème se situe au niveau du pilote non propriétaire proposé par défaut en présence de la carte graphique Nvidia</li>
+</ul>
+<p>En effet, en cohérence avec la vocation <a href="http://fr.wikipedia.org/wiki/Libriste">libriste</a> de Debian, le système d’installation propose le pilote libre <a href="http://fr.wikipedia.org/wiki/Nouveau_%28informatique%29%22">« Nouveau »</a> or , hélas, ce dernier ne gère pas correctement nos cartes graphiques, ce qui provoque le plantage de l’environnement de bureau.</p>
+<p>Pour remédier à cette défaillance, il faut, donc , utiliser le pilote propriétaire mis à disposition par NVIDIA sur le site dédié :<a href="http://www.geforce.com/drivers">http://www.geforce.com/drivers</a></p>
+<p>En sachant que nos cartes graphiques sont la GeForce 9600M GT et la GeForce 9400M  appartenant, donc, à la série 9M et que notre CPU est bien en 64-bit:</p>
+<p><img src="https://decio.zip/uploads/2023/ff3a7917e5.jpg" alt=""> Nous obtenons, par le moteur de recherche du site, la toute dernière version du pilote que nous utiliserons dans la dernière partie de l’installation.</p>
+<p><strong>Procédure utilisée:</strong></p>
+<ul>
+<li>Démarrage de l’utilitaire gparted Live à partir du rEFInd présent sur le disque externe OSX 10.9  à fin de procéder au partitionnement du disque dur interne du MacBook Pro</li>
+</ul>
+<p><strong>NB</strong>: cette opération aurait pu être accomplie directement pas l’installeur Kali: j’ai préféré utiliser GParted parce que je trouve cet outil bien plus efficace et pour le côté sombre de la force…</p>
+<p><strong>NB2</strong>: 8.38 de Swap c’est un « poil » overkill… mais je suis old-school 🙂</p>
+<p><img src="https://decio.zip/uploads/2023/9cfdf89ecc.jpg" alt="">J’ai créée une petite (200Mo) partition en FAT32 chargée d’héberger la solution de démarrage rEFInd locale</p>
+<p>Cette dernière permet d’optimiser la séquence de boot de notre système: Apple EFI &ndash;&gt; rEFInd (sur sda1) –&gt; <a href="http://fr.wikipedia.org/wiki/GNU_GRUB">GRUB</a> &ndash;&gt; Linux (sur sda2)</p>
+<ul>
+<li> Une fois le partitionnement terminé, redémarrer en utilisant le procédé décrit précédemment, sur l’image d’installation de Kali</li>
+</ul>
+<p>À ce stade, il est important de choisir l’option d’installation simple (en mode textuelle) et pas graphique au vu des problèmes d’affichage précédemment évoqués.</p>
+<p><img src="https://decio.zip/uploads/2023/0470520bb8.jpg" alt=""></p>
+<p>Une fois l’installation terminée, j’ai redémarré sur l’utilitaire « Supergrub2 » à fin de contrôler la configuration actuelle , désactiver le pilote Nouveau installé par le système lors de la détection matérielle du logiciel d’installation et démarrer sur la bonne partition.</p>
+<p>Opération réalisée par l’option d’édition (e) fournie par ce même utilitaire pour la session en cours:</p>
+<p><img src="https://decio.zip/uploads/2023/270880d86f.jpg" alt=""></p>
+<p><img src="https://decio.zip/uploads/2023/c3c3c4830e.jpg" alt=""></p>
+<p>Une fois le système chargé, avec ma belle session root à disposition,  j’ai pu rendre le changement définitif par le biais de l’édition de ce même fichier de configuration grub</p>
+<p><code>root@kali:~#sed 's/quiet/quiet nouveau.modeset=0/g' -i /etc/default/grub root@kali:~#update-grub</code></p>
+<p>J’ en ai profité pour le nettoyer définitivement avec le commande:</p>
+<p><code>sudo apt-get --purge remove xserver-xorg-video-nouveau</code></p>
+<p>Par la suite, afin de pouvoir démarrer automatiquement mon Kali sans devoir m’appuyer sur le disque OSX/rEFInd ou Supergrub2 externe, j’ai procédé aux manipulations suivantes:</p>
+<p>– création d’un dossier specifique à mon « démarreur » rEFInd</p>
+<p><code>mkdir /boot/efi</code></p>
+<p>– montage de la partition FAT32 dans ce dossier</p>
+<p><code>mount /dev/sda1 /boot/efi</code></p>
+<p>– Téléchargement de l’installeur rEFInd</p>
+<p><code>wget http://sourceforge.net/projects/refind/files/0.7.8/refind-bin-0.7.8.zip/download -O refind-bin-0.7.8.zip</code></p>
+<p>– installation rEFInd par le biais du script install.sh contenu dans le paquet</p>
+<p><code>unzip refind-bin-0.7.8.zip</code></p>
+<p><code>cd refind-bin-0.7.8.zip/</code></p>
+<p><code>./install.sh</code></p>
+<p>et la magie opère</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Mon « démarreur » est prêt il ne me reste qu’optimiser en effaçant la version 32bit ici inutile</p>
+<p><code>rm /boot/efi/EFI/BOOT/bootia32.efi</code></p>
+<p>et le configurer</p>
+<p><code>nano /boot/efi/EFI/BOOT/refind.conf </code></p>
+<p>Pour réduire le temps d’attente avant démarrage sur la partition par défaut</p>
+<p><code># Timeout in seconds for the main menu screen. Setting the timeout to 0</code></p>
+<p><code># disables automatic booting (i.e., no timeout).</code></p>
+<p><code>#</code></p>
+<p><code>timeout 5</code></p>
+<p>et appliquer un joli thème minimaliste à fond blanc qui s’intègre parfaitement au graphisme de démarrage de OSX:</p>
+<p>en ajoutant la ligne</p>
+<p><code>include minimal-theme/theme.conf</code></p>
+<p>dans ce même fichier après l’avoir téléchargé ici:</p>
+<p><code>cd /boot/efi/EFI/BOOT/</code></p>
+<p><code>wget http://github.com/EvanPurkhiser/rEFInd-minimal/archive/master.zip</code></p>
+<p><code>mv rEFInd-minimal-master minimal-theme</code></p>
+<p>Source: <a href="https://github.com/EvanPurkhiser/rEFInd-minimal">https://github.com/EvanPurkhiser/rEFInd-minimal</a></p>
+<ul>
+<li>Le moment est venu d’installer le pilote graphique proprietaire pour nos cartes Nvidia.</li>
+</ul>
+<p>On prépare le terrain en installant les outils de compilation:</p>
+<p><code>sudo apt-get install linux-headers-$(uname -r) build-essential</code></p>
+<p>et on installe:</p>
+<p><code>wget us.download.nvidia.com/XFree86/Linux-x86_64/340.76/NVIDIA-Linux-x86_64-340.76.run</code></p>
+<p><code>chmod 777 NVIDIA-Linux-x86_64-340.76.run </code></p>
+<p><code>./NVIDIA-Linux-x86_64-340.76.run</code></p>
+<p>(pour l’adresse de téléchargement, je me suis référé au lien du bouton « Download » du moteur de recherche présent sur le site geforce.com)</p>
+<p>Il suffit de suivre les indications à l’écran en confirmant les options par défaut pour amener l’installation à bon port.</p>
+<p>Un petit reboot …et hop une belle fenêtre de login nous permet d’accéder à notre bureau Gnome à la sauce piquante Kali</p>
+<p><img src="https://decio.zip/uploads/2023/725a4dc7d7.jpg" alt=""></p>
+<p><em>Version testé Kali Linux 1.1.0 ( 3.18.0-kalil-amd64 ) + Nvidia Driver 340.76</em></p>
+<hr>
+<p> </p>
+<p>Bonus : J’ai testé cette méthode d’installation avec succès sur un xServe (Early 2009) avec <a href="https://www.suse.com/products/server/">Suse Linux Enterprise Server</a> – Recyclage Power!! –</p>
+<p><img src="/images/2015/04/Capture-d%E2%80%99e%CC%81cran-2015-04-01-a%CC%80-16.52.08.png" alt=""></p>
+<p>Pas besoin des pilotes graphiques :-), il faut juste choisir Grub à la place de ELILO via l’utilitaire de configuration YaST2</p>
+<p><img src="https://decio.zip/uploads/2023/ac35e25896.jpg" alt=""></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2014/06/29/linux-distrofight.html">Linux Distrofight 2014</a></h1>
+		
+
+		<a href="https://decio.zip/2014/06/29/linux-distrofight.html" class="u-url"><time class="dt-published" datetime="2014-06-29 12:00:52 &#43;0100">Jun 29, 2014</time></a>
+
+		<div class="e-content">
+			 <p>categories:</p>
+<ul>
+<li>archive
+tags:</li>
+<li>distrofight</li>
+<li>linux</li>
+<li>image</li>
+<li>fun</li>
+<li>meme</li>
+</ul>
+<hr>
+<p><img src="https://decio.zip/uploads/2023/c5f5a3e0ec.jpg" alt=""></p>
+<p>inspired by <a href="https://i.imgur.com/qgLh1fT.jpg">https://i.imgur.com/qgLh1fT.jpg</a></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2013/05/20/raspberry-pi-comme.html">Raspberry Pi comme service web d`agrégation d`informations RSS</a></h1>
+		
+
+		<a href="https://decio.zip/2013/05/20/raspberry-pi-comme.html" class="u-url"><time class="dt-published" datetime="2013-05-20 12:32:48 &#43;0100">May 20, 2013</time></a>
+
+		<div class="e-content">
+			 <p>categories:</p>
+<ul>
+<li>archive
+tags:</li>
+<li>raspberrypi</li>
+<li>rss</li>
+<li>newsreader</li>
+</ul>
+<hr>
+<p>Dans ce document je vais détailler les opérations nécessaires à la mis en place d&rsquo;un lecteur web de flux d&rsquo;informations à la “Google Reader” sur Raspberry Pi</p>
+<p><img src="https://decio.zip/uploads/2023/db1a8335e0.jpg" alt=""></p>
+<p>Ce service permet d&rsquo;afficher dans une seule page web les informations à jour de tous vos abonnements RSS avec la possibilité de les organiser par TAG, et effectuer de recherches, ou définir de favoris.</p>
+<p><img src="https://decio.zip/uploads/2023/2c7056b0ac.jpg" alt=""></p>
+<h2 id="choix-de-lapplication">Choix de l&rsquo;application</h2>
+<p>J&rsquo;ai choisi la solution web <a href="http://selfoss.aditu.de">Selfoss</a> pour plusieurs raisons:</p>
+<ul>
+<li>Projet open source</li>
+<li>Une interface claire et complète avec support pour l&rsquo;affichage sur les appareils mobiles</li>
+<li>Présence d&rsquo;un moteur de recherche interne et des options de partage habituelles (twitter, mail, instapaper,…)</li>
+<li>Présence d&rsquo;un assistant facilitant l&rsquo;importation de flux depuis “Google Reader”</li>
+<li>Solution très légère, donc adaptée aux spécifications techniques du Raspberry Pi</li>
+</ul>
+<h2 id="choix-du-serveur-web-et-du-serveur-de-base-de-données">Choix du serveur web et du serveur de base de données</h2>
+<p>Un aggregateur de news effectue par définition un travail constant de récupération et organisation des informations en arrière-plan ce qui peut représenter une charge importante pour le serveur selon les nombres des flux RSS suivis.</p>
+<p>Il faillait ,donc, optimiser la partie mise à disposition de l&rsquo;information pour ne pas alourdir davantage la solution.</p>
+<p>Le choix s&rsquo;est donc porté naturellement sur le serveur web <a href="http://fr.wikipedia.org/wiki/Nginx">NGINX</a> qui est réputé pour son utilisation parcimonieuse de la RAM tout en gardant de prestations très élevées. La même motivation a orienté le choix du moteur de base de données vers <a href="http://fr.wikipedia.org/wiki/SQLite">SQLITE</a> qui présente l&rsquo;avantage de ne pas nécessiter d&rsquo;un serveur proprement dit.</p>
+<h2 id="préparation-de-raspbian-pour-une-utilisation-serveur">Préparation de Raspbian pour une utilisation serveur</h2>
+<p><strong>Optimisation matérielle</strong></p>
+<p>Afin d&rsquo;adapter un OS plus tôt pensé pour une utilisation desktop j&rsquo;ai procédé à quelques opérations de “tuning” au niveau de l&rsquo;allocation de ressources et des services installés.</p>
+<p>Allocation de tout l&rsquo;espace disque au système et baisse de la mémoire dédiée au GPU à 16 MB</p>
+<p>Dans les opérations de base on s&rsquo;assurera d&rsquo;avoir procédé aux mises à jour du firmware / système et d&rsquo;avoir déjà effectué l&rsquo;attribution de tout l&rsquo;espace disque de la carte SD au système par le biais de l&rsquo;option “expand-rootfs” de l&rsquo;utilitaire en ligne de commande raspi-config</p>
+<p>Au niveau de l&rsquo;optimisation matérielle, étant donné que nous allons pas utiliser l&rsquo;affichage graphique, nous pouvons diminuer la taille de mémoire destiné à la GPU</p>
+<p>Cette opération est réalisable toujours par l&rsquo;utilitaire raspi-config avec son option “memory_split” (ou l&rsquo;édition manuelle du fichier de config /bott/config.txt)</p>
+<p>L&rsquo;utilitaire affichera la question “How much memory should the GPU have?” avec un champ de saisie qui nous permet de spécifier 16MB (taille minimal)</p>
+<p><img src="https://decio.zip/uploads/2023/f82522f30c.jpg" alt=""></p>
+<p><em>N. B. Cette opération est pensée uniquement pour une utilisation “serveur headless”; si vous souhaitez quand même accéder à votre lecteur de news par le navigateur web du raspi il ne faut pas effectuer cette opération</em></p>
+<p>Nous pouvons aussi effectuer de l&rsquo;optimisation au niveau du CPU afin de garantir de meilleures performances notamment si nous prévoyons de mises à jour fréquentes de flux RSS</p>
+<p>J&rsquo;ai donc procédé à l&rsquo;overclock du CPU à 800 Mhz constants (turbo mode activé) ainsi que la définition de fréquences core et sdram par l&rsquo;édition du même fichier /boot/config.txt avec la ligne de commande:</p>
+<p><code>echo -e &quot;arm_freq=800\nsdram_freq=450\ncore_freq=350\nforce_turbo=1&quot; &gt;&gt; /boot/config.txt</code></p>
+<p><em>N. B. Cette configuration a été testée comme étant sûre par la communauté et ne nécessite pas de dissipateur thermique sur le processeur</em></p>
+<h3 id="optimisation_logicielle">Optimisation logicielle</h3>
+<p>Au niveau de l&rsquo;optimisation logicielle j&rsquo;ai procédé à la désinstallation des toutes les composantes liées à l&rsquo;environnement “desktop” (interface, applications graphiques…)</p>
+<pre tabindex="0"><code>sudo aptitude purge xserver-xorg xserver-xorg-core xserver-xorg-input-all xserver-xorg-input-evdev xserver-xorg-input-synaptics xserver-xorg-video-fbdev xserver-common xpdf xinit x11-common x11-utils x11-xkb-utils xarchiver screen pcmanfm penguinspuzzle lxde-common lxappearance lxde-icon-theme lxinput lxmenu-data lxpanel lxpolkit lxrandr lxsession lxsession-edit lxshortcut lxtask lxterminal leafpad dillo galculator gnome-icon-theme gnome-themes-standard gnome-themes-standard-data gpicview hicolor-icon-theme
+</code></pre><p><img src="https://decio.zip/uploads/2023/edf1775ff9.jpg" alt=""></p>
+<p>Et au nettoyage des fichiers de configuration orphelins ou les locales inutilisées (manuels en langues étrangères, fichiers de localisations…)</p>
+<p><code>aptitude purge ~c</code></p>
+<p><code> aptitude -R install localepurge &amp;&amp; localepurge</code></p>
+<h4 id="installation-des-serveurs">Installation des serveurs</h4>
+<pre tabindex="0"><code>sudo aptitude -R install nginx sendmail openssl ssl-cert php5 php5-dev php5-gd php5-fpm php5-cli php5-sqlite php5-curl php5-common php5-cgi php5-mysql sqlite php-pear php-apc autoconf automake autotools-dev libapr1 libtool curl libcurl4-openssl-dev php-xml-parser
+</code></pre><h3 id="configuration-du-serveur-nginx">Configuration du serveur NGINX</h3>
+<p>J&rsquo;ai commencé par préparer le dossier de publication destiné à accueillir notre lecteur RSS Selfoss</p>
+<p><code>sudo mkdir /var/www/selfoss</code>
+<code>sudo sudo chown -R www-data:www-data /var/www/selfoss</code>
+<code>cd /var/www/selfoss</code></p>
+<p>Et procédé au téléchargement de la dernière version:</p>
+<p><code>sudo wget http://selfoss.aditu.de/selfoss-2.7.zip</code>
+<code>sudo unzip selfoss-2.7.zip</code></p>
+<p><em>N. B. La dernière version stable est toujours dispo ici: <a href="https://github.com/SSilence/selfoss/archive/master.zip">https://github.com/SSilence/selfoss/archive/master.zip</a></em></p>
+<p>En suivant la documentation de Selfoss, j&rsquo;ai ajusté les droits d&rsquo;accès sur certains dossiers de la solution.</p>
+<p><code>sudo chmod a+w data/cache data/favicons data/logs data/thumbnails data/sqlite public/</code></p>
+<p>Pour la configuration du serveur, je me suis basé sur le magnifique exemple d&rsquo;implémentation Ngnix spécialement adapté pour Selfoss, disponible ici:</p>
+<p><a href="https://gist.github.com/Mic92/4091461">https://gist.github.com/Mic92/4091461</a></p>
+<p>J&rsquo;ai donc copié et adapté cette configuration dans un nouveau fichier créer empressement dans le dossier dédié de Nginx</p>
+<p><code>sudo nano /etc/nginx/sites-available/selfoss </code></p>
+<p>Ne pas oublier d&rsquo;effacer le fichier de configuration par défaut.</p>
+<p><code>sudo rm /etc/nginx/sites-enabled/default  </code></p>
+<p>et créer le nouveau lien symbolique nécessaire à la publication effective de mon site</p>
+<p><code>sudo ln -s /etc/nginx/sites-available/selfoss /etc/nginx/sites-enabled/selfoss</code></p>
+<p>Comme nous somme à la pointe de la technologie actuelle 😀 et que dans le fichier de configuration nous avons spécifié ( listen [::]: ) que le serveur écoute aussi en ipv6, il ne faut pas oublier de l&rsquo;activer dans notre Raspbian:</p>
+<p><code>sudo modprobe ipv6</code>
+<code>sudo echo -e &quot;ipv6&quot; &gt;&gt; /etc/modules</code></p>
+<p>Source: <a href="http://www.raspbian.org/RaspbianFAQ#How_do_I_enable_or_use_IPv6.3F">http://www.raspbian.org/RaspbianFAQ#How_do_I_enable_or_use_IPv6.3F</a></p>
+<p>Pour contrôler si le protocole est correctement pris en charge:</p>
+<p><code>sudo sysctl -a | grep net.ipv6</code></p>
+<p>Autres petites adaptations à appliquer sur le configuration pour qu&rsquo;elle colle parfaitement à notre serveur:</p>
+<p>Dans /etc/ngix/site-enabled/selfoss changer l&rsquo;entrée</p>
+<pre tabindex="0"><code>location ~ \.php$ {                                                                                                                           
+           astcgi_pass backend;
+</code></pre><p>par</p>
+<pre tabindex="0"><code>location ~ \.php$ {                                                                                                              
+          fastcgi_pass unix:/var/run/php5-fpm.sock;&lt;/pre&gt;
+</code></pre><p>et</p>
+<p><code>server_name rss.yourdomain.com;</code></p>
+<p>par le nom ou l&rsquo;adresse IP correspondant à votre raspi.</p>
+<p>Comme notre configuration prévoit l&rsquo;accès au site en https afin de sécuriser&rsquo;identification par mot de passe, nous allons créer notre certificat de cryptage.</p>
+<p><code>sudo mkdir /etc/nginx/ssl</code>
+<code>sudo openssl req -new -x509 -nodes -out server.crt -keyout server.key</code>
+<code>sudo chmod 600 server.key</code></p>
+<p>Nous allons renseigner l&rsquo;emplacement de ces fichiers dans le fichier de config /etc/nginx/sites-available/selfoss de suite à l&rsquo;entrée listen [::]:443 ssl;</p>
+<p><code>ssl_certificate      /etc/nginx/ssl/server.crt;</code>
+<code>ssl_certificate_key  /etc/nginx/ssl/server.key;</code></p>
+<p>Nous y sommes presque! Dernière configuration liée à la solution selfoss: c&rsquo;est le moment de déclarer la fréquence des mis à jour de flux RSS. Comme j&rsquo;aime avoir l&rsquo;info la plus fraiche possible, je vais, dans mon cas configurer un refresh tous le 15 minutes</p>
+<p>Il suffit de créer une entrée dans /etc/crontab</p>
+<pre tabindex="0"><code>15 *    * * *   root        /usr/bin/php /var/www/selfoss/update.php
+</code></pre><p>et voilà nous somme prêts!</p>
+<p>c&rsquo;est le moment de démarrer le moteur:</p>
+<p><code>sudo service php5-fpm start</code></p>
+<p><code>sudo service nginx start</code></p>
+<h3 id="configuration-de-selfoss">Configuration de Selfoss</h3>
+<p>Nous pouvons à présent passer à la toute dernière partie de personnalisation de l&rsquo;application web. Cette opération est très simple puisque notre environnement (Nginix+Sqlite) est pris en charge en natif par la solution.</p>
+<p>Il nous reste que créer un compte pour protéger l&rsquo;accès et importer nos abonnements RSS/ATOM stockés sur Google Reader.</p>
+<p>Pas de problèmes, l&rsquo;interface web nous guide dans les démarches.</p>
+<h4 id="création-et-enregistrement-du-login--mot-de-passe">Création et enregistrement du login / mot de passe</h4>
+<p>Il suffit de pointer notre navigateur web vers <a href="https://adresse_de_votre_raspi/password">https://adresse_de_votre_raspi/password</a></p>
+<p><img src="https://decio.zip/uploads/2023/f4b30b6fca.jpg" alt=""></p>
+<p>Une page de création de mots de passe permet de traduire le mot de passe souhaité dans le format (hash) attendu par la solution dans son fichier de configuration</p>
+<p><code>/var/www/selfoss/config.ini</code></p>
+<p>*N.B. si ce fichier n&rsquo;existe pas il suffit de le créer à partir du modèle fourni /var/www/selfoss/default.ini par la ligne de commande:</p>
+<p><code>sudo cp  /var/www/selfoss/default.ini /var/www/selfoss/config.ini</code></p>
+<p>Il suffit de copier la chaîne de caractères proposée dans le champ “Generated password” et le copier dans l&rsquo;entrée “password” du fichier /var/www/selfoss/config.ini*</p>
+<h3 id="importation-des-abonnements-présents-sur-un-compte-google-reader">Importation des abonnements présents sur un compte Google Reader</h3>
+<p>Là aussi Selfoss nous propose un assistant qui nous guide dans le processus:</p>
+<p>Il suffit de pointer notre navigateur web vers <a href="https://adresse_de_votre_raspi/opml">https://adresse_de_votre_raspi/opml</a></p>
+<p><img src="https://decio.zip/uploads/2023/af930f7927.jpg" alt=""></p>
+<p>Cliquer sur le lien “Google Reader Export” pour démarrer l&rsquo;exportation des abonnements à partir de votre compte Google (authentification nécessaire)</p>
+<p>Ensuite, uploader le fichier généré par l&rsquo;opération précédente par le biais du bouton d&rsquo;importation.</p>
+<p>Une fois lancée par l&rsquo;option “Deliver my OPML!” la magie opère et après un laps de temps qui varie selon le nombre de vos flux RSS (20 sec pour une centaine de flux dans mon cas) la page de garde s&rsquo;affiche.</p>
+<p>Vous retrouverez tous vos abonnements classés convenablement par tag comme vous les aviez organisé dans votre compte “Google Reader”: Génial!</p>
+<p>Cet article est également disponible à cette adresse: <a href="http://swissraspberry.ch/doku.php?id=raspberry_pi_comme_service_web_d_agregation_d_informations_rss">http://swissraspberry.ch/doku.php?id=raspberry_pi_comme_service_web_d_agregation_d_informations_rss</a></p>
+<p><img src="https://decio.zip/uploads/2023/8d9567df49.jpg" alt=""></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2013/03/05/xserve-gestion-du.html">Xserve: gestion du LOM par ligne de commande</a></h1>
+		
+
+		<a href="https://decio.zip/2013/03/05/xserve-gestion-du.html" class="u-url"><time class="dt-published" datetime="2013-03-05 12:24:47 &#43;0100">Mar 5, 2013</time></a>
+
+		<div class="e-content">
+			 <p>categories:</p>
+<ul>
+<li>archive
+tags:</li>
+<li>cli</li>
+<li>lom</li>
+<li>xserve</li>
+</ul>
+<hr>
+<p>S’il y a quelque chose que je regrette du <a href="http://decio.eu/2010/11/08/one-less-thing">xserve</a> , c’est bien le service <!-- raw HTML omitted -->LOM<!-- raw HTML omitted --> (Lights-Out Management).</p>
+<p>Ce magnifique (et caractériel) processeur dédié doté de son propre IP, permet d’effectuer des opérations de monitoring et surtout d’allumage et extinction de façon totalement indépendante du OS.</p>
+<p>Un outil indispensable si le système ne répond plus et vous n’avez pas d’accès physique au serveur.</p>
+<p>Habituellement pour interagir avec ce service, notamment pour définir le mot de passe d’accès ou accéder au monitoring graphique, le logiciel « Côntrole Serveur » est préconisé.</p>
+<p><img src="https://decio.zip/uploads/2023/1d1ca7b690.jpg" alt=""></p>
+<p>Or avec la pratique on se rends vit compte que pour la partie de gestion d’alimentation, la seule manière vraiment efficace consiste à utiliser la ligne de commande dédiée <strong>ipmitool</strong></p>
+<p><img src="https://decio.zip/uploads/2023/05cda39f7a.jpg" alt=""></p>
+<p>Je laisse ici, en guise de épitaphe (et surtout à porté de main pour les xserve encore en production) les lignes de commande pour effectuer l’allumage et l’extinction de la machine.</p>
+<p><code>ipmitool -H 10.x.x.10 -U admin -P PASSWORD chassis power off</code></p>
+<p>Pour éteindre le xserve (ou 10.x.x.10 est l’ip du LOM, et PASSWORD le mot de passe LOM )</p>
+<p><code>ipmitool -H 10.x.x.10 -U admin -P PASSWORD chassis power on</code></p>
+<p>Pour démarrer le xserve  (ou 10.x.x.10 est l’ip du LOM, et PASSWORD le mot de passe LOM )</p>
+<p>Cette ligne de commande n’est plus disponible dans OSX 10.7 et suivants, mais disponible <a href="http://sourceforge.net/projects/ipmitool/">ici</a> ou installable depuis brew/macports.</p>
+<p>Si installée par ce biais il est important de spécifier l’option -I lanplus</p>
+<p><code>ipmitool &lt;strong&gt;-I lanplus&lt;/strong&gt; -H 10.x.x.10 -U admin -P PASSWORD chassis status</code></p>
+<p>lors de la connexion avec le LOM, sous peine de voir la connexion échouer avec l’erreur:</p>
+<blockquote>
+<p>Authentication type NONE not supported<br>
+Error: Unable to establish LAN session<br>
+Error sending Chassis Status command</p>
+</blockquote>
+<p>NB L’extinction de la machine effectuée par LOM est équivalente à l’arrêt abrupt provoqué en tirant la prise. (dernier recours)</p>
+<blockquote>
+<p>…Et que le daemon afp CPUphage transformé en zombie unresponsive ne vous hante pas en l’absence du lom. Amen</p>
+</blockquote>
+<p>Extrait de la prière du macadmin</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2012/08/17/ard-personnaliser-la.html">ARD personnaliser la liste de commandes UNIX</a></h1>
+		
+
+		<a href="https://decio.zip/2012/08/17/ard-personnaliser-la.html" class="u-url"><time class="dt-published" datetime="2012-08-17 19:16:13 &#43;0100">Aug 17, 2012</time></a>
+
+		<div class="e-content">
+			 <p>categories:</p>
+<ul>
+<li>archive
+tags:</li>
+<li>AppleRemoteDesktop</li>
+<li>macadmin</li>
+<li>liste</li>
+<li>plist</li>
+</ul>
+<hr>
+<p>Apple Remote Desktop est un incontournable de la trousse d’outil de tout macadmin.</p>
+<p>Son champ d’action ne se limite pas à la prise de côntrole à distance, et s’il fallait citer dans la panoplie des actions possibles la plus puissante, le premier prix reviendrait sans autre à la possibilité de lancer facilement de lignes de commande ou scripts en modalité root sur plusieurs machines immédiatement ou en tâche programmée tout en ayant un retour précis et classifié des résultats obtenus.</p>
+<p>Cette option <!-- raw HTML omitted -->sobrement<!-- raw HTML omitted --> appelée Unix avec son icône Terminal dans la barre de tâche est fournie avec une collection de scripts de base très pratiques et joliment rangés.</p>
+<p><img src="https://decio.zip/uploads/2023/8a57fe2d94.jpg" alt="AARD_UNIX"></p>
+<p>Dans ce même menu il est possible d’ajouter sa propre collection de scripts crées/trouvés amoureusement au fils des années.</p>
+<p>Cette sympathique option est limitée à la création d’entrées successives sans possibilité aucune d’organisation hiérarchique si effectuée par interface graphique.</p>
+<p>En effet pour parvenir à organiser ses propres scripts de la même façon que les menus par défaut, il faut mettre la main dans un fichier xml ad hoc.</p>
+<p>Ce dernier s’appelle UnixCommandTask.plist et se trouve dans la bibliothèque de l’utilisateur dans:</p>
+<p><code>~/Library/Application\ Support/Remote\ Desktop/Presets/UnixCommandTask.plist</code></p>
+<p>La structure du fichier xml est relativement simple: une fois que l’on connaît l’organisation et la hiérarchie de balises nous pouvons l’adapter pour obtenir ce genre de résultat:</p>
+<p><img src="https://decio.zip/uploads/2023/3a02898027.jpg" alt=""></p>
+<p>Pour y arriver, observons la structure du fichier UnixCommandTask.plist de l’exemple précédent</p>
+<pre tabindex="0"><code>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt;
+&lt;plist version=&#34;1.0&#34;&gt;
+&lt;array&gt;
+	&lt;dict&gt;
+		&lt;key&gt;name&lt;/key&gt;
+			&lt;string&gt;MON DOSSIER TOTO&lt;/string&gt;
+		&lt;key&gt;state&lt;/key&gt;
+&lt;array&gt;
+	&lt;dict&gt;
+		&lt;key&gt;name&lt;/key&gt;
+			&lt;string&gt;MON SCRIPT DE LA MORT QUI TUE&lt;/string&gt;
+		&lt;key&gt;state&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;outputMode&lt;/key&gt;
+		&lt;true/&gt;
+		&lt;key&gt;script&lt;/key&gt;
+			&lt;string&gt;LA LIGNE DE COMMANDE&lt;/string&gt;
+		&lt;key&gt;userSelect&lt;/key&gt;
+			&lt;integer&gt;0&lt;/integer&gt;
+	&lt;/dict&gt;
+	&lt;/dict&gt;
+	&lt;dict&gt;
+		&lt;key&gt;name&lt;/key&gt;
+			&lt;string&gt;MON PETIT SCRIPT&lt;/string&gt;
+		&lt;key&gt;state&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;outputMode&lt;/key&gt;
+		&lt;true/&gt;
+		&lt;key&gt;script&lt;/key&gt;
+			&lt;string&gt;LA LIGNE DE COMMANDE 2&lt;/string&gt;
+		&lt;key&gt;userSelect&lt;/key&gt;
+			&lt;integer&gt;0&lt;/integer&gt;
+	&lt;/dict&gt;
+	&lt;/dict&gt;
+&lt;/array&gt;
+	&lt;/dict&gt;
+	&lt;dict&gt;
+		&lt;key&gt;name&lt;/key&gt;
+			&lt;string&gt;MON DOSSIER TITI&lt;/string&gt;
+		&lt;key&gt;state&lt;/key&gt;
+&lt;array&gt;
+	&lt;dict&gt;
+		&lt;key&gt;name&lt;/key&gt;
+			&lt;string&gt;MON APPLESCRIPT&lt;/string&gt;
+		&lt;key&gt;state&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;outputMode&lt;/key&gt;
+			&lt;true/&gt;
+		&lt;key&gt;script&lt;/key&gt;
+			&lt;string&gt;LA LIGNE DE COMMANDE&lt;/string&gt;
+		&lt;key&gt;userSelect&lt;/key&gt;
+			&lt;integer&gt;0&lt;/integer&gt;
+	&lt;/dict&gt;
+	&lt;/dict&gt;
+	&lt;dict&gt;
+		&lt;key&gt;name&lt;/key&gt;
+			&lt;string&gt;MON SCRIPT PERL&lt;/string&gt;
+		&lt;key&gt;state&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;outputMode&lt;/key&gt;
+			&lt;true/&gt;
+		&lt;key&gt;script&lt;/key&gt;
+			&lt;string&gt;LA LIGNE DE COMMANDE 2&lt;/string&gt;
+		&lt;key&gt;userSelect&lt;/key&gt;
+			&lt;integer&gt;0&lt;/integer&gt;
+	&lt;/dict&gt;
+	&lt;/dict&gt;
+&lt;/array&gt;
+	&lt;/dict&gt;
+&lt;/array&gt;
+&lt;/plist&gt;
+</code></pre><p>La logique est grosso modo la même qui gère la structure du code HTML: les dossiers comme le contenu sont délimités par de balises qui s’imbriquent les unes dans les autres selon la hiérarchie souhaitée.</p>
+<p>Si nous ouvrons cette même plist avec un éditeur de texte comme TextWrangler qui range le code de façon à qu’il soit lisible et en mettant en évidence la dépendance entre balises:</p>
+<p><img src="https://decio.zip/uploads/2023/3232128494.jpg" alt=""></p>
+<p><img src="https://decio.zip/uploads/2023/db241d553b.jpg" alt=""></p>
+<p>Nous constatons que mes deux menus « MON DOSSIER TOTO » et « MON DOSSIER TITI » sont contenus dans la première balise <!-- raw HTML omitted --> qui se ferme à la fin de la plist avec <!-- raw HTML omitted -->.</p>
+<p>De la même façon en descendant dans la hiérarchie le menu « MON DOSSIER TOTO » est délimité par la balise <!-- raw HTML omitted -->  à l’intérieur de laquelle on trouve la balise <!-- raw HTML omitted -->  qui contiens les balises <!-- raw HTML omitted --> qui servent à délimiter à leur tour les submenus  « MON SCRIPT DE LA MORT QUI TUE » et « MON PETIT SCRIPT »</p>
+<p>En descendant encore nous trouvons les balises <!-- raw HTML omitted --> nécessaires à expliciter la ligne de commande ou le script.</p>
+<p>Si le script s’articule en plusieurs lignes il suffit de répéter les balises <!-- raw HTML omitted --> <!-- raw HTML omitted -->  sur autant de lignes que necessaire.</p>
+<p>En respectant ce système de « poupées rousses » il est possible d’imbriquer (par copier / coller par ex.) autant de scripts voulus selon la logique souhaitée.</p>
+<p>Vous pouvez télécharger la plist modèle ici:</p>
+<p><a href="/joints/zip/UnixCommandTask.plist_.zip">UnixCommandTask.plist</a></p>
+<p>De suite, en forme d’annexe, quelque script « grand classique » pour votre collection:</p>
+<ul>
+<li>Le script pour « binder » les machines clientes à un serveur OpenDirectory</li>
+</ul>
+<pre tabindex="0"><code>computername=&#34;`scutil --get ComputerName`&#34;
+configname=&lt;strong&gt;NOMSERVEUR&lt;/strong&gt;
+dsconfigldap -f -a &lt;strong&gt;NOMSERVEUR&lt;/strong&gt; -u &lt;strong&gt;ADMIN_OD&lt;/strong&gt; -p &lt;strong&gt;PASSWORD&lt;/strong&gt; -c $computername -n $configname -v
+
+dscl /Search -create / SearchPolicy CSPSearchPath
+dscl /Search -append / CSPSearchPath /LDAPv3/NOMSERVEUR
+dscl /Search/Contacts -create / SearchPolicy CSPSearchPath
+dscl /Search/Contacts -append / CSPSearchPath /LDAPv3/NOMSERVEUR
+
+killall DirectoryService
+</code></pre><p><em>En gras les variables à renseigner avec vos informations</em></p>
+<ul>
+<li>L’applescript qui permet de simuler la saisie manuel du login/motdepasse et permettant ainsi l’ouverture d’ une session sur plusieurs ordinateurs à partir de la fenêtre de login</li>
+</ul>
+<pre tabindex="0"><code>osascript -e &#39;tell application &#34;System Events&#34; to keystroke &#34;&lt;strong&gt;LOGIN_UTILISATEUR&lt;/strong&gt;&#34;&#39;; \
+osascript -e &#39;tell application &#34;System Events&#34; to keystroke tab&#39;; \
+osascript -e &#39;tell application &#34;System Events&#34; to delay 0.5&#39;; \
+osascript -e &#39;tell application &#34;System Events&#34; to keystroke &#34;&lt;strong&gt;MOTdePASSE&lt;/strong&gt;&#34;&#39;; \
+osascript -e &#39;tell application &#34;System Events&#34; to delay 0.5&#39;; \
+osascript -e &#39;tell application &#34;System Events&#34; to keystroke return&#39;
+</code></pre><p><em>En gras les variables à renseigner avec vos informations</em></p>
+<ul>
+<li>La ligne de commande pour changer le mot de passe d’un utilisateur locale sur la(e) machine(s)</li>
+</ul>
+<pre tabindex="0"><code>dscl . -passwd /Users/&lt;strong&gt;TON_USER&lt;/strong&gt; &lt;strong&gt;TONNOUVEAUPASSWORD&lt;/strong&gt;
+</code></pre><p><em>En gras les variables à renseigner avec vos informations</em></p>
+<ul>
+<li>script pour changer la configuration IP du port principale d’une machine</li>
+</ul>
+<pre tabindex="0"><code>mainInt=$(networksetup -listnetworkserviceorder | \
+awk &#39;/\(1\)/ {$1=&#34;&#34;;sub(&#34;^ &#34;,&#34;&#34;,$0);print}&#39;)
+
+networksetup -setmanual &#34;$mainInt&#34; &lt;strong&gt;192.168.1.x 255.255.255.0 192.168.1.1&lt;/strong&gt;
+</code></pre><p>En <strong>gras</strong> les variables à renseigner avec vos informations</p>
+<p><em>post speciale dédicace David « la tornade »</em></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2012/08/16/haters-gonna-hate.html">Haters gonna hate</a></h1>
+		
+
+		<a href="https://decio.zip/2012/08/16/haters-gonna-hate.html" class="u-url"><time class="dt-published" datetime="2012-08-16 19:12:44 &#43;0100">Aug 16, 2012</time></a>
+
+		<div class="e-content">
+			 <hr>
+<p>a friend&rsquo;s iPod 🙂</p>
+<p><img src="https://decio.zip/uploads/2023/ee74610cf4.jpg" alt=""></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2012/08/06/going-root.html">Going Root!</a></h1>
+		
+
+		<a href="https://decio.zip/2012/08/06/going-root.html" class="u-url"><time class="dt-published" datetime="2012-08-06 08:44:05 &#43;0100">Aug 6, 2012</time></a>
+
+		<div class="e-content">
+			 <p>categories:</p>
+<ul>
+<li>archive
+tags:</li>
+<li>root</li>
+<li>image</li>
+<li>swiss</li>
+</ul>
+<hr>
+<p><a href="http://en.wikipedia.org/wiki/Root,_Switzerland">######Root#######</a></p>
+<p><img src="https://decio.zip/uploads/2023/4c443d462a.jpg" alt="">
+<img src="https://decio.zip/uploads/2023/9fba2902ef.jpg" alt=""></p>
+<p><strong>photos credits to (K)Ralf Lengweiler</strong></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2012/04/10/geeks-and-repetitive.html">Geeks and repetitive tasks</a></h1>
+		
+
+		<a href="https://decio.zip/2012/04/10/geeks-and-repetitive.html" class="u-url"><time class="dt-published" datetime="2012-04-10 11:36:46 &#43;0100">Apr 10, 2012</time></a>
+
+		<div class="e-content">
+			 <p>categories:</p>
+<ul>
+<li>archive
+tags:</li>
+<li>geek</li>
+<li>fun</li>
+<li>image</li>
+<li>automation</li>
+</ul>
+<hr>
+<p>Geek attitude 👍:</p>
+<p><img src="https://decio.zip/uploads/2023/87dd1990a3.jpg" alt=""></p>
+<p><em>classic internet graphic - <a href="https://www.google.com/search?q=geeks+and+repetitives+tasks+source">original source unknown to me</a></em></p>
+<hr>
+<p>Risk 😅:
+<img src="https://decio.zip/uploads/2023/a58960f161.jpg" alt="">
+<em>source: <a href="https://xkcd.com/1319/">xkcd - Automation</a></em></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://decio.zip/2010/11/08/one-less-thing.html">One Less Thing…</a></h1>
+		
+
+		<a href="https://decio.zip/2010/11/08/one-less-thing.html" class="u-url"><time class="dt-published" datetime="2010-11-08 13:01:27 &#43;0100">Nov 8, 2010</time></a>
+
+		<div class="e-content">
+			 <p><img src="https://decio.zip/uploads/2023/99d72f9c33.jpg" alt="">
+<em>All credits goes to (K)Ralf Lengweiler</em> (aka @tuzwit)</p>
+
+		</div>
+	  </div>
+	
+
+</div>
+
+
+    
+    powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog">Tiny-Theme</a> | hosted by <a href="https://micro.blog/">micro.blog</a> | All contributions are licensed under CC-BY-4.0 <br> run with ❤️ & 🍺 by Decio Valeri
+
+<link rel="me" href="https://infosec.exchange/@decio">
+
+  </body>
+
+</html>
