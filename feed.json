@@ -124,15 +124,6 @@
 				"tags": ["security","blog"]
 			},
 			{
-				"id": "http://decio.micro.blog/2020/02/15/rockpi.html",
-				"title": "RockPi 4",
-				"content_html": "\n\n",
-				"content_text": "{{< tweet user=\"Decio_o_o\" id=\"1228740145110798343\" >}}\n\n{{< tweet user=\"Decio_o_o\" id=\"1228743585543184384\" >}}\n",
-				"date_published": "2020-02-15T18:05:20+01:00",
-				"url": "https://decio.zip/2020/02/15/rockpi.html",
-				"tags": ["blog","microblog","hardware"]
-			},
-			{
 				"id": "http://decio.micro.blog/2020/01/19/mes-modems-et.html",
 				"title": "Mes modems et les failles (Cablehaunt et Puma6Fail)",
 				"content_html": "\n\n\n\n",
