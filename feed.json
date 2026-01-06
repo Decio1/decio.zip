@@ -7,6 +7,24 @@
 	"items": [
 		
 			{
+				"id": "http://decio.micro.blog/2026/01/06/ah-cool-une-partie-des.html",
+				
+				"content_html": "<!-- raw HTML omitted -->\n",
+				"content_text": "<p>Ah cool, Une partie des présentations du dernier BlackAlps ⚫🏔️ sont publiées.</p><p>J’ai pas pu y aller cette année.<br>👇 <br><a href=\"https://www.blackalps.ch/ba-25/talks.php\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"\">blackalps.ch/ba-25/talks.php</span><span class=\"invisible\"></span></a></p>\n",
+				"date_published": "2026-01-06T12:10:27+01:00",
+				"url": "https://decio.zip/2026/01/06/ah-cool-une-partie-des.html",
+				"tags": ["microblog"]
+			},
+			{
+				"id": "http://decio.micro.blog/2026/01/06/retour-dune-arnaque-linvestissement-usurpant.html",
+				
+				"content_html": "<!-- raw HTML omitted -->\n",
+				"content_text": "<p>⚠️ Retour d’une <a href=\"https://infosec.exchange/tags/arnaque\" class=\"mention hashtag\" rel=\"tag\">#<span>arnaque</span></a> à l’investissement usurpant la RTS (nouvelle itération)</p><p>L’arnaque à l’investissement pour laquelle la RTS a déjà porté plainte est de retour, avec une nouvelle infrastructure et des techniques plus avancées.</p><p>👉 Nouveau domaine observé : <strong>zuwedu[.]com</strong><br> (à dézinguer / surveiller dans vos filtres)</p><p>🔍 Techniques utilisées</p><ul><li><p>Cloaking avancé, comparable aux campagnes de désinformation de type Doppelgänger (usurpation de médias légitimes avec ciblage géographique et contextuel).</p></li><li><p>Le point d’entrée est une publicité native (avec photo de M. Revaz) intégrée dans des articles de presse numérique francophones, diffusée via le réseau <strong>Taboola</strong>.</p></li><li><p>Lors de l’analyse avec des outils comme Lookyloo, on observe une page “neutre” (avec quand même la même image IA de M. Revaz), destinée à tromper les analyses de contenu et les outils automatisés.<br>⬇️ <br><a href=\"https://lookyloo.circl.lu/tree/4908c56b-68a5-4a1b-accf-61f0e81beea7\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">lookyloo.circl.lu/tree/4908c56</span><span class=\"invisible\">b-68a5-4a1b-accf-61f0e81beea7</span></a></p></li></ul><p>En revanche, depuis un PC en Suisse, avec un referrer média et une configuration linguistique CH, le site sert une fausse page RTS complète, menant à une plateforme d’investissement frauduleuse.</p><p>-&gt;Nouvelle évolution notable</p><p>Les cybercriminels ont ajouté un agent de chat IA en amont du scam.</p><p>Cet agent pose des questions de ciblage (âge, nationalité, situation familiale, banque suisse...).</p><p>Ce n’est qu’après ce filtrage qu’un formulaire d’inscription à la plateforme frauduleuse est présenté.</p><p>Recommandations</p><ul><li><p>Bloquer le domaine et les URLs associées.</p></li><li><p>Surveiller les redirections via trc.taboola.com.</p></li></ul><p>➡️ un média légitime ne proposera jamais un investissement via une pub “article” + chat IA.</p><p>🔗 Contexte : plainte déposée par la RTS (2024)<br>👇 <br><a href=\"https://www.rts.ch/info/suisse/2024/article/la-rts-porte-plainte-pour-usurpation-d-identite-de-deux-de-ses-presentateurs-sur-internet-28393533.html\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">rts.ch/info/suisse/2024/articl</span><span class=\"invisible\">e/la-rts-porte-plainte-pour-usurpation-d-identite-de-deux-de-ses-presentateurs-sur-internet-28393533.html</span></a><br>⬇️ <br><a href=\"https://www.24heures.ch/escroquerie-plainte-de-la-rts-pour-proteger-ses-presentateurs-936332048867\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">24heures.ch/escroquerie-plaint</span><span class=\"invisible\">e-de-la-rts-pour-proteger-ses-presentateurs-936332048867</span></a></p><p><a href=\"https://infosec.exchange/tags/CyberVeille\" class=\"mention hashtag\" rel=\"tag\">#<span>CyberVeille</span></a> <a href=\"https://infosec.exchange/tags/RTS\" class=\"mention hashtag\" rel=\"tag\">#<span>RTS</span></a> <a href=\"https://infosec.exchange/tags/Suisse\" class=\"mention hashtag\" rel=\"tag\">#<span>Suisse</span></a> <a href=\"https://infosec.exchange/tags/Arnaque\" class=\"mention hashtag\" rel=\"tag\">#<span>Arnaque</span></a></p><p><img src=\"uploads/2026/017ba77169164b7d.png\">\n",
+				"date_published": "2026-01-06T12:05:10+01:00",
+				"url": "https://decio.zip/2026/01/06/retour-dune-arnaque-linvestissement-usurpant.html",
+				"tags": ["photo","microblog"]
+			},
+			{
 				"id": "http://decio.micro.blog/2026/01/04/le-phishing-ch-frais-du.html",
 				
 				"content_html": "<!-- raw HTML omitted -->\n",
@@ -70,6 +88,24 @@
 				"tags": ["microblog"]
 			},
 			{
+				"id": "http://decio.micro.blog/2025/12/27/ouep-plusieurs-passages-pas-glorieux.html",
+				
+				"content_html": "<!-- raw HTML omitted -->\n",
+				"content_text": "<p>ouep, plusieurs passages pas glorieux pour grand monde dans ce leak 🤨<br>morale : si vous avez (ou avez eu) un compte Wired (Condé Nast ),<br>les données associées sont très probablement déjà exposées.</p><p>\"Condé Nast gets hacked, and DataBreaches gets “played” — Christmas lump of coal edition\"<br>👇<br><a href=\"https://databreaches.net/2025/12/25/conde-nast-gets-hacked-and-databreaches-gets-played-christmas-lump-of-coal-edition/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">databreaches.net/2025/12/25/co</span><span class=\"invisible\">nde-nast-gets-hacked-and-databreaches-gets-played-christmas-lump-of-coal-edition/</span></a></p><p>Hudson Rock vient de checker les données d'une de ces publications <br>👇<br><a href=\"https://www.linkedin.com/posts/alon-gal-utb_looks-like-wireds-database-was-leaked-for-ugcPost-7410567684641259520-DPnR\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">linkedin.com/posts/alon-gal-ut</span><span class=\"invisible\">b_looks-like-wireds-database-was-leaked-for-ugcPost-7410567684641259520-DPnR</span></a></p><p><a href=\"https://infosec.exchange/tags/CyberVeille\" class=\"mention hashtag\" rel=\"tag\">#<span>CyberVeille</span></a>  <a href=\"https://infosec.exchange/tags/dataleak\" class=\"mention hashtag\" rel=\"tag\">#<span>dataleak</span></a></p>\n",
+				"date_published": "2025-12-27T11:06:51+01:00",
+				"url": "https://decio.zip/2025/12/27/ouep-plusieurs-passages-pas-glorieux.html",
+				"tags": ["microblog"]
+			},
+			{
+				"id": "http://decio.micro.blog/2025/12/25/got-a-bandcamp-redeem-code.html",
+				
+				"content_html": "<!-- raw HTML omitted -->\n",
+				"content_text": "<p>Got a Bandcamp redeem code with this awesome album, but I already own it, just drop me a private message if you’d like it</p>\n",
+				"date_published": "2025-12-25T19:27:12+01:00",
+				"url": "https://decio.zip/2025/12/25/got-a-bandcamp-redeem-code.html",
+				"tags": ["microblog"]
+			},
+			{
 				"id": "http://decio.micro.blog/2025/12/25/gold-frankincense-and-psichedelia-listening.html",
 				
 				"content_html": "<!-- raw HTML omitted -->\n",
@@ -112,6 +148,69 @@
 				"content_text": "<p>[ 🧰 Tool] </p><p><a href=\"https://infosec.exchange/tags/ClickFix\" class=\"mention hashtag\" rel=\"tag\">#<span>ClickFix</span></a> Wiki</p><p>\"A comprehensive catalog of Windows system utilities, commands, and techniques for security research and system administration.\"<br>⬇️ <br><a href=\"https://github.com/jhllc/clickfix-wiki.github.io\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">github.com/jhllc/clickfix-wiki</span><span class=\"invisible\">.github.io</span></a><br>👇 <br><a href=\"https://clickfix-wiki.github.io/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">clickfix-wiki.github.io/</span><span class=\"invisible\"></span></a></p><p><a href=\"https://infosec.exchange/tags/CyberVeille\" class=\"mention hashtag\" rel=\"tag\">#<span>CyberVeille</span></a></p>\n",
 				"date_published": "2025-12-22T11:51:02+01:00",
 				"url": "https://decio.zip/2025/12/22/tool-clickfix-wiki-a-comprehensive.html",
+				"tags": ["microblog"]
+			},
+			{
+				"id": "http://decio.micro.blog/2025/12/19/pour-finir-linfo-a-fait.html",
+				
+				"content_html": "<!-- raw HTML omitted -->\n",
+				"content_text": "<p>Pour finir, l’info a fait son chemin<br>jusqu’à la mailing-list des administrateurs de relais <a href=\"https://infosec.exchange/tags/tor\" class=\"mention hashtag\" rel=\"tag\">#<span>tor</span></a>.</p><p>Donc c’est bien une des campagnes ...académiques de sensibilisation de masse.</p><p>Mais comme souvent, au final ça suscite plus de questions que de réponses,<br>vu qu’on parle d’une attaque au niveau AS / BGP.</p><p>Thread côté Tor <br>👇 <br><a href=\"https://lists.torproject.org/mailman3/hyperkitty/list/tor-relays@lists.torproject.org/thread/R5IUD5DJBBJXJ3Q3YXY3HLDLDHA6AO57/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">lists.torproject.org/mailman3/</span><span class=\"invisible\">hyperkitty/list/tor-relays@lists.torproject.org/thread/R5IUD5DJBBJXJ3Q3YXY3HLDLDHA6AO57/</span></a></p><p>Et bien évidemment, ça déclenche des réactions très humaines 😅</p><p>Extrait qui résume assez bien l’ambiance :</p><blockquote><p>“ Is the stated vulnerability an actively exploited problem or is this a DoS attack by scaremongering?</p><p>My guess is it is neither. I would be that it's just some over-excited<br>researchers who want to get the news out about just how awful BGP is.<br>But, while it is \"exploitable\", there's not much that can be done with<br>it. All an attacker could do is cause the connections destined for your<br>relay to go to their servers instead. But crucially, they do not have<br>your relay key, so all other relays and clients would refuse to connect<br>to them..”</p></blockquote><p>Bref,<br>je vais quand même ouvrir un ticket chez Scaleway,<br>histoire de voir ce qu’ils en pensent de leur côté.</p><p><a href=\"https://infosec.exchange/tags/BGP\" class=\"mention hashtag\" rel=\"tag\">#<span>BGP</span></a> <a href=\"https://infosec.exchange/tags/NetOps\" class=\"mention hashtag\" rel=\"tag\">#<span>NetOps</span></a> <a href=\"https://infosec.exchange/tags/bgphijacking\" class=\"mention hashtag\" rel=\"tag\">#<span>bgphijacking</span></a></p>\n",
+				"date_published": "2025-12-19T11:26:19+01:00",
+				"url": "https://decio.zip/2025/12/19/pour-finir-linfo-a-fait.html",
+				"tags": ["microblog"]
+			},
+			{
+				"id": "http://decio.micro.blog/2025/12/18/vuln-zeroday-sur-les-appliances.html",
+				
+				"content_html": "<!-- raw HTML omitted -->\n",
+				"content_text": "<p>[VULN] ⚠️ Zero‑day sur les appliances e‑mail Cisco : compromission, backdoors et logs effacés<br>👇 <br><a href=\"https://cyberveille.ch/posts/2025-12-18-zero-day-sur-les-appliances-e-mail-cisco-compromission-backdoors-et-logs-effaces/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">cyberveille.ch/posts/2025-12-1</span><span class=\"invisible\">8-zero-day-sur-les-appliances-e-mail-cisco-compromission-backdoors-et-logs-effaces/</span></a></p><p>🔗 Source originale : <a href=\"https://www.helpnetsecurity.com/2025/12/17/cisco-secure-email-cve-2025-20393/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">helpnetsecurity.com/2025/12/17</span><span class=\"invisible\">/cisco-secure-email-cve-2025-20393/</span></a></p><p>Advisory officiel: </p><p><a href=\"https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sma-attack-N9bf4\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">sec.cloudapps.cisco.com/securi</span><span class=\"invisible\">ty/center/content/CiscoSecurityAdvisory/cisco-sa-sma-attack-N9bf4</span></a></p><p>Analyse de Cisco Talos: </p><p><a href=\"https://blog.talosintelligence.com/uat-9686/\" target=\"_blank\" rel=\"nofollow noopener\">UAT-9686 actively targets Cisco Secure Email Gateway and Secure Email and Web Manager</a></p><p>Résumé FR ➡️ <a href=\"https://cyberveille.ch/posts/2025-12-18-campagne-uat-9686-un-apt-a-nexus-chinois-cible-cisco-secure-email-via-le-backdoor-aquashell/\" target=\"_blank\" rel=\"nofollow noopener\">Campagne UAT-9686: un APT à nexus chinois cible Cisco Secure Email via le backdoor AquaShell</a></p><p>💬 <br>⬇️ <br><a href=\"https://infosec.pub/post/39234259\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">infosec.pub/post/39234259</span><span class=\"invisible\"></span></a></p><p><a href=\"https://infosec.exchange/tags/CyberVeille\" class=\"mention hashtag\" rel=\"tag\">#<span>CyberVeille</span></a> <a href=\"https://infosec.exchange/tags/0day\" class=\"mention hashtag\" rel=\"tag\">#<span>0day</span></a> <a href=\"https://infosec.exchange/tags/Cisco\" class=\"mention hashtag\" rel=\"tag\">#<span>Cisco</span></a></p>\n",
+				"date_published": "2025-12-18T14:14:47+01:00",
+				"url": "https://decio.zip/2025/12/18/vuln-zeroday-sur-les-appliances.html",
+				"tags": ["microblog"]
+			},
+			{
+				"id": "http://decio.micro.blog/2025/12/18/tool-clickfix-hunter-by-httpsgithubcomcdup.html",
+				
+				"content_html": "<!-- raw HTML omitted -->\n",
+				"content_text": "<p>[ 🧰 Tool] </p><p><a href=\"https://infosec.exchange/tags/ClickFix\" class=\"mention hashtag\" rel=\"tag\">#<span>ClickFix</span></a> Hunter<br>by<br><a href=\"https://github.com/cdup07\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/cdup07</span><span class=\"invisible\"></span></a></p><p>\"This site showcases collected ClickFix domains, complete with before &amp; after screenshots and the malicious clipboard commands attackers attempt to trick users into running.\"<br>👀 <br>👇 <br><a href=\"https://clickfix.carsonww.com/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">clickfix.carsonww.com/</span><span class=\"invisible\"></span></a> </p><p><a href=\"https://infosec.exchange/tags/CyberVeille\" class=\"mention hashtag\" rel=\"tag\">#<span>CyberVeille</span></a> <a href=\"https://infosec.exchange/tags/outils\" class=\"mention hashtag\" rel=\"tag\">#<span>outils</span></a> <a href=\"https://infosec.exchange/tags/infosec\" class=\"mention hashtag\" rel=\"tag\">#<span>infosec</span></a></p>\n",
+				"date_published": "2025-12-18T12:16:50+01:00",
+				"url": "https://decio.zip/2025/12/18/tool-clickfix-hunter-by-httpsgithubcomcdup.html",
+				"tags": ["microblog"]
+			},
+			{
+				"id": "http://decio.micro.blog/2025/12/18/related-et-pertinent-cyberattaque-ministre.html",
+				
+				"content_html": "<!-- raw HTML omitted -->\n",
+				"content_text": "<p>[related] et pertinent </p><p>\"Cyberattaque ministère de l’Intérieur : BreachForums, un vrai-faux retour ?\"<br>👇 <br><a href=\"https://www.lemagit.fr/actualites/366636476/BreachForums-un-vrai-faux-retour\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">lemagit.fr/actualites/36663647</span><span class=\"invisible\">6/BreachForums-un-vrai-faux-retour</span></a></p>\n",
+				"date_published": "2025-12-18T11:22:38+01:00",
+				"url": "https://decio.zip/2025/12/18/related-et-pertinent-cyberattaque-ministre.html",
+				"tags": ["microblog"]
+			},
+			{
+				"id": "http://decio.micro.blog/2025/12/18/jai-loll-forza-urlhaus-httpsiocexchangeabusech.html",
+				
+				"content_html": "<!-- raw HTML omitted -->\n",
+				"content_text": "<p>j'ai lollé <br>forza urlhaus! 💪 </p><p>👇 <br><a href=\"https://ioc.exchange/@abuse_ch/115728013815925770\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">ioc.exchange/@abuse_ch/1157280</span><span class=\"invisible\">13815925770</span></a></p>\n",
+				"date_published": "2025-12-18T10:56:34+01:00",
+				"url": "https://decio.zip/2025/12/18/jai-loll-forza-urlhaus-httpsiocexchangeabusech.html",
+				"tags": ["microblog"]
+			},
+			{
+				"id": "http://decio.micro.blog/2025/12/18/nowlistening-scifi-movies-by-automobile.html",
+				
+				"content_html": "<!-- raw HTML omitted -->\n",
+				"content_text": "<p><a href=\"https://infosec.exchange/tags/NowListening\" class=\"mention hashtag\" rel=\"tag\">#<span>NowListening</span></a> </p><p>SCI-FI MOVIES<br>by AUTOMOBILE CLUB 🚘 <br>👇 <br><a href=\"https://automobileclub.bandcamp.com/track/sci-fi-movies\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">automobileclub.bandcamp.com/tr</span><span class=\"invisible\">ack/sci-fi-movies</span></a></p><p>Celui-ci est vraiment excellent, mais honnêtement tous les singles sont très bons.<br>J’ai hâte de découvrir l’album quand il sortira</p><p>\"Everyone loves automobiles, and Automobile Club's satirical energy, driven by growling guitars and beating drums, depicts this nonsensical love with irony.</p><p>Founded in 2024 in Geneva, Switzerland, by members of The Animen, Kuma and Promethee, the power trio delivers overdriven rock with no concessions. All gas, no brakes.\"</p><p><a href=\"https://infosec.exchange/tags/punkrock\" class=\"mention hashtag\" rel=\"tag\">#<span>punkrock</span></a> <a href=\"https://infosec.exchange/tags/grunge\" class=\"mention hashtag\" rel=\"tag\">#<span>grunge</span></a> <a href=\"https://infosec.exchange/tags/indierock\" class=\"mention hashtag\" rel=\"tag\">#<span>indierock</span></a> <a href=\"https://infosec.exchange/tags/stoner\" class=\"mention hashtag\" rel=\"tag\">#<span>stoner</span></a> <a href=\"https://infosec.exchange/tags/Geneva\" class=\"mention hashtag\" rel=\"tag\">#<span>Geneva</span></a> 🤘   ( <a href=\"https://infosec.exchange/tags/bandcamp\" class=\"mention hashtag\" rel=\"tag\">#<span>bandcamp</span></a> )</p>\n",
+				"date_published": "2025-12-18T10:39:57+01:00",
+				"url": "https://decio.zip/2025/12/18/nowlistening-scifi-movies-by-automobile.html",
+				"tags": ["microblog"]
+			},
+			{
+				"id": "http://decio.micro.blog/2025/12/18/cyberattaque-beauvau-un-suspect-de.html",
+				
+				"content_html": "<!-- raw HTML omitted -->\n",
+				"content_text": "<p>\"Cyberattaque à Beauvau : un suspect de 22 ans interpellé ce mercredi\"</p><p>\"Un jeune homme, condamné pour des faits similaires en 2025, a été placé en garde à vue. Selon «Le Parisien», cette arrestation a eu lieu à Limoges avec la collaboration de la BRI (Brigade de recherche et d’intervention).\"<br>👇 <br><a href=\"https://www.liberation.fr/societe/police-justice/cyberattaque-a-beauvau-un-suspect-de-22-ans-interpelle-20251217_BE5FQSXBRFCR3IOVM37NE5OU3A/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">liberation.fr/societe/police-j</span><span class=\"invisible\">ustice/cyberattaque-a-beauvau-un-suspect-de-22-ans-interpelle-20251217_BE5FQSXBRFCR3IOVM37NE5OU3A/</span></a></p><p>💬 <br>⬇️ <br><a href=\"https://infosec.pub/post/39203417\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">infosec.pub/post/39203417</span><span class=\"invisible\"></span></a></p>\n",
+				"date_published": "2025-12-18T09:48:38+01:00",
+				"url": "https://decio.zip/2025/12/18/cyberattaque-beauvau-un-suspect-de.html",
 				"tags": ["microblog"]
 			},
 			{
